@@ -1,40 +1,52 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
-  <head>
-    <title>MakeMIT 2016 | February 13, 2016</title>
-    <script>if (window.location.origin + window.location.pathname != window.location.href){  window.location = window.location.origin + window.location.pathname;}
-</script>
-    <link rel="icon" type="image/png" href="static/images/new_logo_black.png">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="static/lib/semantic.min.css">
-    <script type="text/javascript" src="static/lib/jquery.js"></script>
-    <script type="text/javascript" src="static/lib/skrollr.min.js"></script>
-    <script type="text/javascript" src="static/lib/semantic.min.js"></script>
-    <script type="text/javascript" src="static/lib/skrollr.menu.min.js"></script>
-    <script type="text/javascript" src="static/lib/gears.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="image_src" href="http://makemit.org/{%&#32;static&#32;'images/meta.png'}">
-    <meta property="og:image" content="static/images/meta.png">
-    <meta name="description" content="MakeMIT - A hardware hackathon promoting innovation that is geared towards those who are excited and passionate about designing and building. February 13, 2016 @ MIT.">
-<link rel="stylesheet" href="static/stylesheets/index.css"/>
-  </head>
-  <body>
-<nav id="nav" data-0="opacity:0" data-200="opacity:0" data-210-top="opacity: 1" data-anchor-target="#about-slide" class="ui borderless menu">
-  <div class="ui centered grid"><a href="index.html#about-slide" class="centered grid item">
+<head>
+  <title>MakeMIT 2016 | February 13, 2016</title>
+  <script>if (window.location.origin + window.location.pathname != window.location.href){  window.location = window.location.origin + window.location.pathname;}
+  </script>
+  <link rel="icon" type="image/png" href="static/images/new_logo_black.png">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/lib/semantic.min.css">
+  <script type="text/javascript" src="static/lib/jquery.js"></script>
+  <script type="text/javascript" src="static/lib/skrollr.min.js"></script>
+  <script type="text/javascript" src="static/lib/semantic.min.js"></script>
+  <script type="text/javascript" src="static/lib/skrollr.menu.min.js"></script>
+  <script type="text/javascript" src="static/lib/gears.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="image_src" href="http://makemit.org/{%&#32;static&#32;'images/meta.png'}">
+  <meta property="og:image" content="static/images/meta.png">
+  <meta name="description" content="MakeMIT - A hardware hackathon promoting innovation that is geared towards those who are excited and passionate about designing and building. February 13, 2016 @ MIT.">
+  <link rel="stylesheet" href="static/stylesheets/index.css"/>
+</head>
+<body>
+  <nav id="nav" data-0="opacity:0" data-200="opacity:0" data-210-top="opacity: 1" data-anchor-target="#about-slide" class="ui borderless menu">
+    <div class="ui centered grid"><a href="index.html#about-slide" class="centered grid item">
       <div class="link">About</div></a><a href="index.html#schedule-slide" class="centered grid item">
       <div class="link">Schedule</div></a><a href="index.html#sponsors-slide" class="centered grid item">
       <div class="link">Sponsors</div></a><a href="index.html#faq-slide" class="centered grid item">
       <div class="link">FAQ  </div></a><a href="index.html#contact-slide" class="centered grid item">
       <div class="link">Contact</div></a>
-  </div>
-</nav>
-<div id="skrollr-body">
+    </div>
+  </nav>
   <div id="gears">
-    <img id="cog" src="static/images/gear.png"/>
+    <img id="cog-left" src="static/images/thick gear.png"/>
+    <img id="cog-right" src="static/images/thick gear.png"/>
+  </div>
+  <div id="tracks">
+    <div id="left-track"></div>
+    <div id="right-track"></div>
+  </div>
+  <div id="skrollr-body">
     <section id="home-slide" class="homeSlide">
-      <div class="bcg"><img id="tools" src="static/images/tools.png"/>
+      <div class="bcg"><!--<img id="tools" src="static/images/tools.png"/>-->
         <div class="hsContainer">
+          <div id="logo">
+            <img id="left-ring" src="static/images/gear.png"/>
+            <img id="ring" src="static/images/make ring.png"/>
+            <img id="make-m" src="static/images/make m.png"/>
+            <img id="right-ring" src="static/images/gear.png"/>
+          </div>
           <div class="hsContent">
             <h1>Make<span id="title-accent">MIT</span>
             </h1>
@@ -46,7 +58,7 @@
               <div class="row">
                 <div class="center aligned column">
                   <div class="row"><a href="review2015/index.html">
-                      <div id="register" class="ui button">2015 Review</div></a>
+                    <div id="register" class="ui button">2015 Review</div></a>
                   </div>
                 </div>
               </div>
@@ -69,12 +81,12 @@
             <div class="white">
               <div class="content">
                 <p>A hardware hackathon promoting innovation that
-  is geared towards those who are excited
-  and passionate about designing and building. Over
-  200 students competed
-  in an 15+ hour prototyping competition on February 28, 2015.
-  The <b>top ten teams</b> were then
-  be invited to come back for a <b>second weekend</b> in order to refine their design.
+                  is geared towards those who are excited
+                  and passionate about designing and building. Over
+                  200 students competed
+                  in an 15+ hour prototyping competition on February 28, 2015.
+                  The <b>top ten teams</b> were then
+                  be invited to come back for a <b>second weekend</b> in order to refine their design.
                 </p>
               </div>
             </div>
@@ -187,42 +199,36 @@
               <div class="row">
                 <div class="column">
                   <h2>How does it work?</h2>
-                  <p>You'll work in teams of 3-5 hackers to make a product. We'll provide you with a bunch of protoyping resources
-  and lots of food to keep you fueled. The <b>top ten teams</b> from the first weekend will be invited back for a <b>second
-  round</b>, this time with machine shop access.
+                  <p>You'll work in teams of 3-5 hackers to make anything your heart desires. We'll provide you with a bunch of protoyping resources and lots of food to keep you fueled. The <b>top ten teams</b> from the first weekend will be invited back for a <b>second round</b> to refine their projects.
                   </p>
                 </div>
                 <div class="column">
                   <h2>Who can attend?</h2>
-                  <p>All undergraduate students are welcome. Unfortunately, we are not accepting graduate students for this year's event.
+                  <p>All undergraduate students are welcome. Though we aren't accepting graduate students as hackers, we would love to have graduate students as event volunteers! Contact us to get involved.
                   </p>
                 </div>
                 <div class="column">
                   <h2>How much does it cost?</h2>
                   <p>This event is completely free! We'll provide food and drinks, and of course a plethora of materials and tools to
-  hack with. Everything's on us!
+                    hack with. Everything's on us!
                   </p>
                 </div>
               </div>
               <div class="row">
                 <div class="column">
                   <h2>Are you providing travel reimbursments? </h2>
-                  <p>Unfortunately, we are not able to provide travel reimbursements this year! However, if you need accomodations,
-  just shoot us an <a href="mailto:team@makemit.org">email</a> and we can help you find a place to stay.
+                  <p>Unfortunately, we are not able to provide travel reimbursements this year :( However, if you need accomodations,
+                    just shoot us an <a href="mailto:team@makemit.org">email</a> and we can help you find a place to stay.
                   </p>
                 </div>
                 <div class="column">
                   <h2>How do I register?</h2>
-                  <p>Sorry! MakeMIT 2015 has already passed.
-  Sign up for our mailing list to be kept in the loop for next year!
+                  <p>We're holding a registration lottery. You must submit a lottery application before January 29th, 2016 at 11:59PM EST, after which we will randomly select hackers to admit. Don't worry about submitting early -- admission is not rolling. You and your team will have a week to accept your spot if you are lotteried in.
                   </p>
                 </div>
                 <div class="column">
                   <h2>How big should teams be? Can I sign up alone?</h2>
-                  <p>Teams should be groups of 3-5 people. If you have a team, have all your members register and specifiy each
-  other in your application. <b>If you don't have a team, don't worry!</b> We will help you discuss projects and
-  organize a team.
-
+                  <p>Teams should be groups of 3-5 people. The lottery is not on a rolling basis, so we encourage you to submit your application after you've finalized your team to simplify the process. If you already applied but wish to change your team, don't worry! Contact us and we can fix your application. <br>We recommend signing up as a team; however, feel free to register alone if you don't have a team formed - there will be a Facebook group / time before the event for team formation!
                   </p>
                 </div>
               </div>
@@ -230,25 +236,25 @@
                 <div class="column">
                   <h2>What hardware will be available?</h2>
                   <p>There'll be a fleet of 3D printers, laser cutters, Arduinos, Raspberry Pi's, and much more.
-  Check out the 2015 materials list <a href="#">here</a>! If there's something you want to see but
-  isn't there, drop us a <a href="mailto:team@makemit.org">line</a>!
+                    Check out the 2015 materials list <a href="#">here</a>! If there's something you want to see but
+                    isn't there, drop us a <a href="mailto:team@makemit.org">line</a>!
 
                   </p>
                 </div>
                 <div class="column">
                   <h2>What should I bring?</h2>
                   <p>You'll need your student ID to check-in and we recommend you bring a laptop for hacking! You can also feel free
-  to bring in any of the materials that we <a href="#">list</a>. Otherwise, if you'd like to bring something
-  off-the-shelf that we are not providing, shoot us an <a href="mailto:team@makemit.org">email</a>. You will not
-  be allowed to bring anything that has not been pre-approved.
+                    to bring in any of the materials that we <a href="#">list</a>. Otherwise, if you'd like to bring something
+                    off-the-shelf that we are not providing, shoot us an <a href="mailto:team@makemit.org">email</a>. You will not
+                    be allowed to bring anything that has not been pre-approved.
                   </p>
                 </div>
                 <div class="column">
                   <h2>What should I make?</h2>
                   <p>Whatever your heart desires. You can come with an idea in mind, but we ask that you do not start building or coding
-  anything before the event starts.  We encourage all kinds of ideas, whether it's a proof of concept, looks-like-works-like
-  model, critical module, simulation, CAD renderings, or prototype.  Whatever you choose to make, do your best to sell your
-  ideas to the judges.
+                    anything before the event starts.  We encourage all kinds of ideas, whether it's a proof of concept, looks-like-works-like
+                    model, critical module, simulation, CAD renderings, or prototype.  Whatever you choose to make, do your best to sell your
+                    ideas to the judges.
                   </p>
                 </div>
               </div>
@@ -256,13 +262,25 @@
                 <div class="column">
                   <h2>I'm a beginner. Can I still apply?</h2>
                   <p>Don't worry! We encourage beginners to come and learn! We've got tons of mentors and we really focus on catering to
-  newcomers' needs by providing tutorials and online resources. In other words, we are super beginner friendly!
+                    newcomers' needs by providing tutorials and online resources. In other words, we are super beginner friendly!
                   </p>
                 </div>
                 <div class="column">
+                  <h2>What's the expo?</h2>
+                  <p>After the hacking period ends, we will host a public expo where teams can show off their hacks to friends, family, professors, corporate sponsors, and anyone else in attendance! Everyone not participating is encouraged to stop by to see cool projects, enjoy cookies, and have a say in the coolest of the awesome ideas.
+                  </p>
+                </div>
+                <div class="column">
+                  <h2>How does judging work?</h2>
+                  <p>Judges will base their ratings of the projects on three criteria: functionality, real-world potential, and just plain awesomenesss. Don't worry! This is a hackathon, not a business plan competition, so these three criteria will be balanced equally. Worried that judges might not like your project even though college students will? Every student at the expo will also be able to vote on their favorite projects, and one popular vote winner will also move on to the second weekend!
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
                   <h2>I have a question not listed. Who do I ask?</h2>
                   <p>Get in touch with us through <a href="https://www.facebook.com/makemit">facebook</a>,
-  <a href="https://twitter.com/TeamMakeMIT">twitter</a>, or <a href="mailto:team@makemit.org">email</a>!
+                    <a href="https://twitter.com/TeamMakeMIT">twitter</a>, or <a href="mailto:team@makemit.org">email</a>!
                   </p>
                 </div>
               </div>
@@ -287,9 +305,20 @@
       </div>
     </section>
   </div>
-</div>
 <script>(function( $ ) {  var s = skrollr.init({render: function(data) {      },      forceHeight:false,  });  skrollr.menu.init(s,{animate:true});})(jQuery);$('#register').accordion();$('#mailsignup').accordion({  onOpen : function() {    position = $('.ui.accordion').offset().top + $('.ui.accordion').height() - $(window).height();    if ($(window).scrollTop() < position) {      $('html,body').animate({        scrollTop: $('#about-slide').offset().top - $(window).height()      }, 500);    }  }});//$('.ui.accordion').accordion('onOpen', function(){console.log('hi')});//var scrollBottom = $(window).scrollTop() + $(window).height();
-
 </script>
-  </body>
+<script>
+$(document).ready(function(){
+  setTimeout(function(){
+    var docHeight = $(document).height(),
+    tracks = $('#tracks');
+    tracks.css({
+      'height': docHeight + 'px',
+      // '-webkit-animation': 'fadein 1s',
+      // 'opacity': '1'
+    }); 
+  }, 2000);
+})
+</script>
+</body>
 </html>
