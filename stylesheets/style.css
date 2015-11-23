@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+section {
+  height: 100vh;
+  width: 100vw;
+  text-align: center; }
+
+.bg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1; }
+
+.bg-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background: black;
+  opacity: .7; }
+
+.main .content {
+  color: white;
+  padding-top: 35vh; }
+  .main .content .title {
+    font-size: 6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 15px; }
+  .main .content .subtitle {
+    margin-top: 20px;
+    font-size: 2em;
+    text-transform: uppercase; }
+  .main .content .date {
+    margin-top: 20px;
+    font-size: 1.5em; }
+  .main .content button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 300ms; }
+  .main .content button:hover {
+    background: transparent;
+    color: white;
+    border: 2px solid white; }
+
+/*# sourceMappingURL=style.css.map */
