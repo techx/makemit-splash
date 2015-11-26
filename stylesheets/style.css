@@ -68,7 +68,7 @@ body .accent {
 
 #left-track {
   position: absolute;
-  width: 10%;
+  width: 100px;
   height: 100%;
   overflow: hidden;
   background-image: url("/img/track_left.png");
@@ -78,7 +78,7 @@ body .accent {
 #right-track {
   position: absolute;
   right: 0;
-  width: 10%;
+  width: 100px;
   height: 100%;
   overflow: hidden;
   background-image: url("/img/track_right.png");
@@ -88,11 +88,11 @@ body .accent {
 
 #gears {
   position: absolute;
+  z-index: 1;
   width: 100%;
   height: 100%; }
 
 #cog-left {
-  z-index: 1;
   width: 10vh;
   margin-left: -5.25vh;
   margin-top: 10.5vh;
@@ -101,7 +101,6 @@ body .accent {
   -webkit-animation: fadein 3s; }
 
 #cog-right {
-  z-index: 1;
   width: 10vh;
   margin-top: 10.5vh;
   margin-right: -5.25vh;
@@ -126,7 +125,7 @@ body .accent {
   margin-bottom: 14px;
   position: relative;
   top: 50%;
-  color: #728088; }
+  color: #7C92CA; }
 
 #nav a.item:hover:after {
   content: '';
@@ -422,11 +421,13 @@ body .accent {
 
 /*overview slide*/
 #about .bcg {
-  background-color: #fff;
+  background-color: #ffca43;
+  color: #fff;
   text-align: center; }
 
 #about .bcg .hsContainer {
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-top: 15vh; }
 
 #about .bcg .hsContainer .hsContent {
   top: 0;
@@ -435,20 +436,13 @@ body .accent {
 #about .bcg .hsContainer table {
   margin: auto; }
 
-#about .bcg .hsContainer .yellow {
-  background-color: #ffca43;
-  z-index: -1;
-  min-height: 55vh;
-  color: #fff;
-  padding-top: 15vh; }
-
-#about .bcg .hsContainer .yellow .logo {
+#about .bcg .hsContainer .logo {
   padding-bottom: 2vh; }
 
-#about .bcg .hsContainer .yellow .logo img {
+#about .bcg .hsContainer .logo img {
   width: 180px; }
 
-#about .bcg .hsContainer .yellow h1 {
+#about .bcg .hsContainer h1 {
   margin: 0;
   text-transform: uppercase;
   font-size: 3em;
@@ -472,15 +466,22 @@ body .accent {
 
 /*stats slide*/
 #stats {
-  height: auto; }
+  height: auto;
+  z-index: 10; }
+
+#stats #grey {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
 
 #stats .bcg {
-  background-image: url("http://i.imgur.com/RF7MPum.jpg");
+  /*background-image: url("http://i.imgur.com/RF7MPum.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   min-height: 100%;
-  opacity: 0.95;
   text-align: center; }
 
 #stats .bcg .hsContainer {
@@ -539,7 +540,7 @@ body .accent {
   transition: all 600ms ease; }
 
 #faq .bcg {
-  background-color: #728088;
+  background-color: #7C92CA;
   min-height: 100%;
   text-align: center; }
 
@@ -588,7 +589,7 @@ body .accent {
   color: #fff; }
 
 #schedule .bcg {
-  background: #728088;
+  background: #7C92CA;
   text-align: center; }
 
 #schedule .bcg .hsContainer {
@@ -617,15 +618,27 @@ body .accent {
   margin: auto; }
 
 #schedule .bcg .hsContainer .hsContent #schedule {
-  width: 370px;
+  width: 35em;
+  max-width: 80%;
+  text-align: left;
   margin: auto; }
 
 #schedule .bcg .hsContainer .hsContent #schedule .item {
   font-size: 1.4em; }
 
-#schedule .bcg .hsContainer .hsContent #schedule .item .header,
+#schedule .bcg .hsContainer .hsContent #schedule .divider {
+      border-top: 3px solid #fff;
+      margin: 15px auto;
+      padding-top: 5px; }
+
+#schedule .bcg .hsContainer .hsContent #schedule .item .header {
+  width: 25%;
+  display: inline-block;
+  text-align: right; }
+
 #schedule .bcg .hsContainer .hsContent #schedule .item .description {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 2em; }
 
 @media only screen and (max-height: 480px) {
   #schedule .bcg .hsContainer {
@@ -639,6 +652,11 @@ body .accent {
 
   #schedule .bcg .hsContainer .hsContent #schedule {
     width: auto; } }
+
+@media only screen and (max-width: 600px) {
+  #schedule .bcg .hsContainer .hsContent #schedule .item {
+    font-size: 1.15em; } }
+
 /*sponsors slide*/
 #sponsors {
   min-height: 40vh; }
@@ -722,7 +740,7 @@ body .accent {
   margin-top: 0; }
 
 #contact .bcg .hsContainer #accent {
-  color: #728088; }
+  color: #7C92CA; }
 
 #contact .bcg .hsContainer .contact {
   margin-top: 100px;
@@ -735,7 +753,7 @@ body .accent {
   font-family: "Montserrat", sans-serif; }
 
 #contact .bcg .hsContainer .contact i {
-  color: #728088; }
+  color: #7C92CA; }
 
 #contact .bcg .hsContainer .contact i:hover {
   opacity: 0.7;
