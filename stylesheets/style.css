@@ -449,7 +449,7 @@ body .accent {
   letter-spacing: 5px; }
 
 #about .bcg .hsContainer .white {
-  color: #242323; }
+  color: #fff; }
 
 #about .bcg .hsContainer .white .content {
   width: 50vw;
@@ -462,7 +462,7 @@ body .accent {
 #about .bcg .hsContainer .white .content p {
   font-size: 1.3em;
   line-height: 1.8em;
-  font-weight: 400; }
+  font-weight: 700; }
 
 /*stats slide*/
 #stats {
