@@ -71,9 +71,10 @@ body .accent {
   width: 100px;
   height: 100%;
   overflow: hidden;
-  background-image: url("/img/track_left.png");
+  background-image: url("/img/track_left_2.png");
   background-repeat: repeat-y;
-  background-size: 5vh; }
+  background-size: 50px;
+}
 
 #right-track {
   position: absolute;
@@ -81,10 +82,10 @@ body .accent {
   width: 100px;
   height: 100%;
   overflow: hidden;
-  background-image: url("/img/track_right.png");
+  background-image: url("/img/track_right_2.png");
   background-repeat: repeat-y;
   background-position: right top;
-  background-size: 5vh; }
+  background-size: 50px; }
 
 #gears {
   position: absolute;
@@ -92,23 +93,23 @@ body .accent {
   height: 100%; }
 
 #cog-left {
-  width: 10vh;
+  width: 100px;
   z-index:1;
-  margin-left: -5.25vh;
-  margin-top: 10.5vh;
+  margin-left: -50px;
+  margin-top: 12vh;
   position: fixed;
-  -webkit-transform: rotate(31deg);
+  -webkit-transform: rotate(-0.25rad);
   -webkit-animation: fadein 3s; }
 
 #cog-right {
-  width: 10vh;
+  width: 100px;
   z-index:1;
-  margin-top: 10.5vh;
-  margin-right: -5.25vh;
+  margin-top: 12vh;
+  margin-right: -50px;
   position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: rotate(-31deg);
+  -webkit-transform: rotate(0.25rad);
   -webkit-animation: fadein 3s; }
 
 #nav {

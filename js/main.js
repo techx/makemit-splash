@@ -6,26 +6,26 @@ $(document).ready(function(){
 
     $('#nav').css({ 'opacity': calc })
     if ( calc > '1' ) {
-          $('#nav').css({ 'opacity': 1 });
-      } else if ( calc < '0' ) {
-          $('#nav').css({ 'opacity': 0 });
-      }
+      $('#nav').css({ 'opacity': 1 });
+    } else if ( calc < '0' ) {
+      $('#nav').css({ 'opacity': 0 });
+    }
   });
 
   var $cogLeft = $('#cog-left'),
-    $cogRight = $('#cog-right'),
-      $window = $(window),
-      windowHeight = $(window).height();
+  $cogRight = $('#cog-right'),
+  $window = $(window),
+  windowHeight = $(window).height();
 
   var rotateCog = function($cog, amount) {
     $cog.css({
-      'transform': 'rotate(' + amount + 'deg)'
+      'transform': 'rotate(' + amount + 'rad)'
     });
   };
   $(window).scroll(function () {
-      var amount = ($window.scrollTop() / windowHeight * -1200 + 31);
-      rotateCog($cogLeft, amount);
-      rotateCog($cogRight, -amount);
+    var amount = ($window.scrollTop() / 47.13 + 0.25);
+    rotateCog($cogLeft, -amount);
+    rotateCog($cogRight, amount);
   });
 
   setTimeout(function(){
@@ -37,4 +37,15 @@ $(document).ready(function(){
       // 'opacity': '1'
     });
   }, 2000);
+
+  $(window).resize(function() {
+    tracks = $('#tracks');
+    tracks.css({
+      'height': '0px'
+    });
+    var docHeight = $(document).height();
+    tracks.css({
+      'height': docHeight + 'px',
+    });
+  });
 })
