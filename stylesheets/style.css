@@ -96,7 +96,7 @@ body .accent {
   width: 100px;
   z-index:1;
   margin-left: -50px;
-  margin-top: 12vh;
+  margin-top: 154px;
   position: fixed;
   -webkit-transform: rotate(-0.25rad);
   -webkit-animation: fadein 3s; }
@@ -104,7 +104,7 @@ body .accent {
 #cog-right {
   width: 100px;
   z-index:1;
-  margin-top: 12vh;
+  margin-top: 154px;
   margin-right: -50px;
   position: fixed;
   top: 0;
