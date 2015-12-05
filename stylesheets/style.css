@@ -177,7 +177,7 @@ body .accent {
 /*logo slide*/
 #logo {
   padding-top: 4vh;
-  height: 42vh;
+  /*height: 42vh;*/
   margin-bottom: 1vh;
   -webkit-animation: fadein 3s; }
 
