@@ -680,6 +680,7 @@ body .accent {
 
 #sponsors .bcg {
   background: #ecc65b;
+  background: #ffca43;
   text-align: center; }
 
 #sponsors .bcg .hsContainer {
@@ -734,6 +735,10 @@ body .accent {
   min-height: 100%;
   text-align: center;
   height: 100%; }
+
+#contact .bcg {
+  background: #ffca43;
+  text-align: center; }
 
 #contact .bcg .hsContainer {
   padding: 100px 0px 10px 0px;
