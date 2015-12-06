@@ -3,13 +3,17 @@ $(document).ready(function(){
 document.getElementById('gears').style.visibility='hidden';
 document.getElementById('tracks').style.visibility='hidden';
   } else {
-
+    $('#nav').hide();
     $(window).on('scroll', function() {
       var scrollTop = $(this).scrollTop();
       var height = $('#home').outerHeight();
       var calc = (scrollTop / height);
 
+      $('#nav').show();
       $('#nav').css({ 'opacity': calc });
+      if (calc <= '0') {
+        $('#nav').hide();
+      }
       if ( calc > '1' ) {
         $('#nav').css({ 'opacity': 1 });
       } else if ( calc < '0' ) {
