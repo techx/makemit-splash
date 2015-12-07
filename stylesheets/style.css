@@ -179,7 +179,9 @@ body .accent {
   padding-top: 10vh;
   height: 40vh;
   margin-bottom: 15vh;
-  -webkit-animation: fadein 3s; }
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+}
 
 #left-ring {
   position: relative;
@@ -188,10 +190,11 @@ body .accent {
   float: left;
   width: 20vw;
   z-index: 2;
-  -webkit-animation-name: rotateCCWLeft;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotateCCWLeft_m;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  animation: rotateCCWLeft 10s infinite linear;
 }
 
 #ring {
@@ -199,10 +202,11 @@ body .accent {
   width: 20vw;
   margin-right: -13.2vw;
   z-index: 1;
-  -webkit-animation-name: rotateCW;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotateCW_m;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  animation: rotateCW 10s infinite linear;
 }
 
 #make-m {
@@ -214,35 +218,79 @@ body .accent {
   position: relative;
   width: 20vw;
   z-index: 3;
-  -webkit-animation-name: rotateCCWRight;
-  -webkit-animation-duration: 10s;
+  -moz-animation-name: rotateCCWRight_m;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  animation: rotateCCWRight 10s infinite linear;
+/*  -webkit-animation-duration: 10s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;*/
 }
 
-@-webkit-keyframes rotateCW {
+@keyframes rotateCW {
   from {
-    -webkit-transform: rotate(-45deg); }
+    transform: rotate(-45deg);
+  }
   to {
-    -webkit-transform: rotate(315deg); }
+    transform: rotate(315deg);
+  }
 }
-@-webkit-keyframes rotateCCWRight {
-  0% { -webkit-transform: rotate(102.492deg); }
-  4.16% { -webkit-transform: rotate(97.5deg); }
-  66.66% { -webkit-transform: rotate(-127.5deg); }
-  100% { -webkit-transform: rotate(-167.508deg); }
+
+@keyframes rotateCCWRight {
+  0% { transform: rotate(102.492deg); }
+  4.16% { transform: rotate(97.5deg); }
+  66.66% { transform: rotate(-127.5deg); }
+  100% { transform: rotate(-167.508deg); }
 }
-@-webkit-keyframes rotateCCWLeft {
-  0% { -webkit-transform: rotate(157.5deg); }
-  16.66% { -webkit-transform: rotate(97.5deg); }
-  54.166% { -webkit-transform: rotate(52.5deg); }
-  100% { -webkit-transform: rotate(-112.5deg); }
+@keyframes rotateCCWLeft {
+  0% { transform: rotate(157.5deg); }
+  16.66% { transform: rotate(97.5deg); }
+  54.166% { transform: rotate(52.5deg); }
+  100% { transform: rotate(-112.5deg); }
 }
-@-webkit-keyframes fadein {
+
+@-moz-keyframes rotateCW_m {
   from {
-    opacity: 0; }
+    -moz-transform: rotate(-45deg);
+  }
   to {
-    opacity: 1; } }
+    -moz-transform: rotate(315deg);
+  }
+}
+
+@-moz-keyframes rotateCCWRight_m {
+  0% { -moz-transform: rotate(102.492deg); }
+  4.16% { -moz-transform: rotate(97.5deg); }
+  66.66% { -moz-transform: rotate(-127.5deg); }
+  100% { -moz-transform: rotate(-167.508deg); }
+}
+
+@-moz-keyframes rotateCCWLeft_m {
+  0% { -moz-transform: rotate(157.5deg); }
+  16.66% { -moz-transform: rotate(97.5deg); }
+  54.166% { -moz-transform: rotate(52.5deg); }
+  100% { -moz-transform: rotate(-112.5deg); }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+@-moz-keyframes fadein_m {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
 #home .bcg {
   background-color: #7C92CA;
 }
