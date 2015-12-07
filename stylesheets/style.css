@@ -47,7 +47,7 @@ body .accent {
     background-attachment: scroll; } }
 @media only screen and (max-width: 480px) {
   section {
-    min-height: 100% !important;
+    /*min-height: 100% !important;*/
     position: relative !important; }
 
   .hsContent h1 {
@@ -176,11 +176,10 @@ body .accent {
     margin: 5px 20px; } }
 /*logo slide*/
 #logo {
-  padding-top: 10vh;
-  height: 40vh;
-  margin-bottom: 15vh;
-  animation: fadein 3s;
-  -moz-animation: fadein 3s;
+  padding-top: 4vh;
+  /*height: 42vh;*/
+  margin-bottom: 1vh;
+  -webkit-animation: fadein 3s;
 }
 
 #left-ring {
@@ -315,7 +314,7 @@ body .accent {
   color: #fff;
   letter-spacing: 8px;
   font-size: 5em;
-  line-height: 0.6em;
+  line-height: 0.3em;
   font-family: "Montserrat", sans-serif; }
 
 #home .bcg .hsContainer .hsContent #title-accent {
@@ -328,7 +327,7 @@ body .accent {
   color: #fff;
   font-size: 1.6em;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif; }
 
@@ -337,6 +336,8 @@ body .accent {
 
 #home .bcg .hsContainer .hsContent h4,
 #home .bcg .hsContainer .hsContent a {
+  margin-top: 15px;
+  line-height: .5em;
   font-size: 1.3em;
   color: #fff;
   font-weight: 400;
@@ -344,10 +345,11 @@ body .accent {
 
 @media only screen and (max-height: 667px) {
   #home .bcg .hsContainer .hsContent {
-    padding-top: 32vh; } }
+    padding-top: 45h; } }
+/*
 #home .bcg .ui.stackable.grid {
-  margin-top: 10px; }
-
+  margin-top: 1px; }
+*/
 #home .bcg .ui.segment {
   background: none; }
 
@@ -515,7 +517,7 @@ body .accent {
 
 #about .bcg .hsContainer .white .content {
   width: 50vw;
-  min-width: 350px;
+  min-width: 300px;
   padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -725,6 +727,7 @@ body .accent {
 
 #sponsors .bcg {
   background: #ecc65b;
+  background: #ffca43;
   text-align: center; }
 
 #sponsors .bcg .hsContainer {
@@ -780,6 +783,10 @@ body .accent {
   text-align: center;
   height: 100%; }
 
+#contact .bcg {
+  background: #ffca43;
+  text-align: center; }
+
 #contact .bcg .hsContainer {
   padding: 100px 0px 10px 0px;
   height: auto; }
@@ -820,3 +827,33 @@ body .accent {
 #contact .bcg .hsContainer .contact i:hover {
   opacity: 0.7;
   transition: all 300ms ease; }
+
+
+
+#home .bcg .hsContainer #clockdiv {
+    color: #7C92CA;
+    margin-bottom: 4px;
+    display: inline-block;
+    font-weight: 3000;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+#home .bcg .hsContainer #clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+}
+
+#home .bcg .hsContainer #clockdiv div > span{
+  padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    border-radius: 3px;
+    border-radius: 3px;
+    background: #ffca43;
+    display: inline-block;
+}
+
+

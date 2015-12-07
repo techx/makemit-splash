@@ -31,6 +31,8 @@ CCCCCCCC>>, !! ;`!! > ! ..,,CCCC',)CC>,CC>' -C>'' .... ' ..- :  '''`. :'.:'`
 ``` ::: : `!!!!<!! !!;!!> !!''!!!; `''''''`  `.n.'``..```|~~;.`"" """" .`Cx/
 :::.`:. :`. <!!'!! !>!!!! !''!'!!!> ,<<<CC,`CCCC'<CCCCC>..,, '!; ="""= C, ")
 
+
+1
 It doesn't take a picasso to stick a funny ascii art in here ;)
 -->
 <html>
@@ -61,6 +63,9 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
 
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
   <script type="text/javascript" src="js/main.js"></script>
+
+
+
 </head>
 
 <body>
@@ -90,7 +95,17 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
           <img id="make-m" src="/img/make_m_yellow.png"/>
           <img id="right-ring" src="/img/gear.png"/>
         </div>
+        <div>
+        </br>
+        </div>
+
+        
+
         <div class="hsContent">
+          
+
+
+
           <h1>Make<span id="title-accent">MIT</span>
           </h1>
           <h2>We are a <span id="title-accent">hardware</span> hackathon.</h2>
@@ -98,6 +113,34 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
             <h4><i id="title-accent" class="calendar outline icon"></i> February 13, 2016</h4>
             <a href="https://www.google.com/maps/place/Stratton+Student+Center/@42.359099,-71.094536,17z/data=!3m1!4b1!4m2!3m1!1s0x89e370aa862b3beb:0x487c37ec53df273"><i id="title-accent" class="marker icon"></i> MIT Student Center</a>
           </div>
+
+          <div class="myClock" style='padding-top=10px'>
+            
+            <h2 style="
+    margin-top: 14px;
+    margin-bottom: 2px;
+">Registration Opens in</h2>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+            </div>
+
+
           <div class="ui stackable one wide grid">
             <div class="row">
               <div class="center aligned column">
@@ -270,7 +313,7 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
               </div>
               <div class="column">
                 <h2>How big should teams be? Can I sign up alone?</h2>
-                <p>Teams should be groups of 3-5 people. The lottery is not on a rolling basis, so we encourage you to submit your application after you've finalized your team to simplify the process. If you already applied but wish to change your team, don't worry! Contact us and we can fix your application. <br>We recommend signing up as a team; however, feel free to register alone if you don't have a team formed - there will be a Facebook group / time before the event for team formation!
+                <p>Teams should be groups of 3-5 people. The lottery is not on a rolling basis, so we encourage you to submit your application after you've finalized your team to simplify the process. If you already applied but wish to change your team, just contact us. We recommend signing up as a team; however, feel free to register alone if you don't have one - there will be a Facebook group / time before the event for team formation!
                 </p>
               </div>
             </div>
@@ -346,5 +389,51 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
       </div>
     </div>
   </section>
+
+<script>
+function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock(){
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock,1000);
+}
+
+var deadline = 'December 8 2015 00:00:00 UTC-0500';
+//Incrase
+initializeClock('clockdiv', deadline);
+</script>
+
 </body>
 </html>
