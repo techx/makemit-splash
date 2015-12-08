@@ -128,7 +128,9 @@ body .accent {
   margin-bottom: 14px;
   position: relative;
   top: 50%;
-  color: #7C92CA; }
+  color: #7C92CA;
+  transition: all 300ms ease;
+}
 
 #nav a.item:hover:after {
   content: '';
@@ -138,18 +140,20 @@ body .accent {
   bottom: 0px;
   opacity: 0.6;
   border-bottom: 3px solid #728088;
-  transition: all 300ms ease; }
+}
 
 #nav .item {
   font-size: 1.3rem; }
 
 #nav .link {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  transition: all 200ms ease;
+}
 
 #nav .link:hover {
   opacity: 0.6;
-  transition: all 200ms ease; }
+}
 
 #nav #floating-nav-icon {
   max-width: 400px; }
@@ -285,7 +289,8 @@ body .accent {
   font-family: "Montserrat", sans-serif; }
 
 #home .bcg .hsContainer .hsContent a:hover {
-  color: #ffca43; }
+  color: #ffca43;
+}
 
 #home .bcg .hsContainer .hsContent h4,
 #home .bcg .hsContainer .hsContent a {
@@ -294,7 +299,9 @@ body .accent {
   font-size: 1.3em;
   color: #fff;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  transition: all 300ms ease;
+}
 
 @media only screen and (max-height: 667px) {
   #home .bcg .hsContainer .hsContent {
@@ -321,12 +328,34 @@ body .accent {
   border: 3px solid #fff;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  transition: all 500ms ease;
+}
 
 #home .bcg #register:hover {
-  transition: all 600ms ease;
-  color: #ffca43; }
+  color: #ffca43;
+  border-color: #ffca43;
+}
+#home .bcg #review {
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+  font-weight: 700;
+  width: 20vw;
+  min-width: 300px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 500ms ease;
+}
 
+#home .bcg #review:hover {
+  color: #ffca43;
+  border-color: #ffca43;
+}
 #home .bcg #mailsignup {
   background: none;
   margin-left: auto;
@@ -407,17 +436,20 @@ body .accent {
   display: inline-block;
   bottom: 10px;
   right: 50%;
-  left: 49%; }
+  left: 49%;
+}
 
 #home #down-arrow i {
-  color: #fff; }
+  color: #fff;
+  transition: all 600ms ease;
+}
 
 #home #down-arrow a:hover {
   text-decoration: none; }
 
 #home #down-arrow:hover i {
   color: #ffca43;
-  transition: all 600ms ease; }
+}
 
 @media only screen and (max-height: 480px) {
   #home .bcg #tools {
