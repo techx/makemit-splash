@@ -219,6 +219,36 @@ body .accent {
 
 @keyframes rotateCW {
   from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+}
+
+@keyframes rotateCCWRight {
+  0% { transform: rotate(102.492deg); }
+  4.16% { transform: rotate(97.5deg); }
+  66.66% { transform: rotate(-127.5deg); }
+  100% { transform: rotate(-167.508deg); }
+}
+@keyframes rotateCCWLeft {
+  0% { transform: rotate(157.5deg); }
+  16.66% { transform: rotate(97.5deg); }
+  54.166% { transform: rotate(52.5deg); }
+  100% { transform: rotate(-112.5deg); }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
+}
+@keyframes rotateCW {
+  from {
     transform: rotate(-45deg); }
   to {
     transform: rotate(315deg); }
@@ -234,18 +264,6 @@ body .accent {
   16.66% { transform: rotate(97.5deg); }
   54.166% { transform: rotate(52.5deg); }
   100% { transform: rotate(-112.5deg); }
-}
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; }
-}
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; }
 }
 #home .bcg {
   background-color: #7C92CA;
