@@ -98,9 +98,9 @@ body .accent {
   margin-left: -50px;
   margin-top: 154px;
   position: fixed;
-  -webkit-transform: rotate(-0.25rad);
-  -webkit-animation: fadein 3s; }
-
+  transform: rotate(-0.25rad);
+  animation: fadein 3s;
+}
 #cog-right {
   width: 100px;
   z-index:1;
@@ -109,8 +109,9 @@ body .accent {
   position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: rotate(0.25rad);
-  -webkit-animation: fadein 3s; }
+  transform: rotate(0.25rad);
+  animation: fadein 3s;
+}
 
 #nav {
   position: fixed;
@@ -179,7 +180,7 @@ body .accent {
   padding-top: 4vh;
   /*height: 42vh;*/
   margin-bottom: 1vh;
-  -webkit-animation: fadein 3s;
+  animation: fadein 3s;
 }
 
 #left-ring {
@@ -189,10 +190,6 @@ body .accent {
   float: left;
   width: 20vw;
   z-index: 2;
-  -moz-animation-name: rotateCCWLeft_m;
-  -moz-animation-duration: 10s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
   animation: rotateCCWLeft 10s infinite linear;
 }
 
@@ -201,10 +198,6 @@ body .accent {
   width: 20vw;
   margin-right: -13.2vw;
   z-index: 1;
-  -moz-animation-name: rotateCW_m;
-  -moz-animation-duration: 10s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
   animation: rotateCW 10s infinite linear;
 }
 
@@ -217,14 +210,7 @@ body .accent {
   position: relative;
   width: 20vw;
   z-index: 3;
-  -moz-animation-name: rotateCCWRight_m;
-  -moz-animation-duration: 10s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
   animation: rotateCCWRight 10s infinite linear;
-/*  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;*/
 }
 
 @keyframes rotateCW {
@@ -249,29 +235,6 @@ body .accent {
   100% { transform: rotate(-112.5deg); }
 }
 
-@-moz-keyframes rotateCW_m {
-  from {
-    -moz-transform: rotate(-45deg);
-  }
-  to {
-    -moz-transform: rotate(315deg);
-  }
-}
-
-@-moz-keyframes rotateCCWRight_m {
-  0% { -moz-transform: rotate(102.492deg); }
-  4.16% { -moz-transform: rotate(97.5deg); }
-  66.66% { -moz-transform: rotate(-127.5deg); }
-  100% { -moz-transform: rotate(-167.508deg); }
-}
-
-@-moz-keyframes rotateCCWLeft_m {
-  0% { -moz-transform: rotate(157.5deg); }
-  16.66% { -moz-transform: rotate(97.5deg); }
-  54.166% { -moz-transform: rotate(52.5deg); }
-  100% { -moz-transform: rotate(-112.5deg); }
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -280,16 +243,24 @@ body .accent {
     opacity: 1; 
   }
 }
-
-@-moz-keyframes fadein_m {
+@keyframes rotateCW {
   from {
-    opacity: 0;
-  }
+    transform: rotate(-45deg); }
   to {
-    opacity: 1; 
-  }
+    transform: rotate(315deg); }
 }
-
+@keyframes rotateCCWRight {
+  0% { transform: rotate(102.492deg); }
+  4.16% { transform: rotate(97.5deg); }
+  66.66% { transform: rotate(-127.5deg); }
+  100% { transform: rotate(-167.508deg); }
+}
+@keyframes rotateCCWLeft {
+  0% { transform: rotate(157.5deg); }
+  16.66% { transform: rotate(97.5deg); }
+  54.166% { transform: rotate(52.5deg); }
+  100% { transform: rotate(-112.5deg); }
+}
 #home .bcg {
   background-color: #7C92CA;
 }
