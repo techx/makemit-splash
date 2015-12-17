@@ -244,8 +244,47 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
   <div class="bcg">
     <div class="hsContainer">
       <div class="hsContent">
-        <h1>Sponsors</h1>
-        <p>To Be Announced.</p>
+        <h1>Sponsors (2016)</h1>
+        <div id="sponsors-grid" class="ui one column grid">
+          <div class="column">
+            <div class="row">
+              <div id="gold" class="ui one column center aligned grid">
+                <div class="column">
+                  <a target="_blank" href="http://disney.com/"><img src="img/sponsors/GOLD-disney.png" alt="Disney" title="At Disney, we're storytellers. We make the impossible, possible. We do this through utilizing and developing cutting-edge technology and pushing the envelope to bring stories to life through our movies, products, interactive games, parks and resorts, and media networks. As the global leader in high-quality family entertainment we deliver unparalleled creative content and experiences to audiences and guests around the world." 
+                  class="masterTooltip"/></a>
+                  <a target="_blank" href="http://www.oracle.com/index.html"><img src="img/sponsors/GOLD-oracle.png" alt="Oracle"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div id="silver" class="ui one column center aligned grid">
+                <div class="row">
+                  <div class="column">
+                    <a target="_blank" href="http://lemelson.mit.edu/"><img src="img/sponsors/SILVER-Lemelson-MIT.png" alt="Lemelson-MIT"/></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div id="bronze" class="ui one column center aligned grid">
+                <div class="row">
+                  <div class="column">
+                    <a target="_blank" href="http://pos.toasttab.com/"><img src="img/sponsors/BRONZE-toast.png" alt="Toast"/></a>
+                    <a target="_blank" href="http://www.3m.com/3M/en_US/company-us/"><img src="img/sponsors/BRONZE-3m.png" alt="3M"/></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div id="custom" class="ui one column center aligned grid">
+                <div class="row">
+                  <div class="column">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -364,6 +403,32 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
     </div>
   </div>
 </section>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').fadeOut('fast');
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+</script>
+
 
 // <script>
 // function getTimeRemaining(endtime){
