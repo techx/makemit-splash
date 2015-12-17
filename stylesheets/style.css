@@ -787,11 +787,7 @@ body .accent {
 
 @media only screen and (max-height: 480px) {
   #sponsors .bcg .hsContainer {
-    min-height: 60vh; } 
-  #sponsors .tooltip {
-    visibility: hidden;
-  }
-  }
+    min-height: 60vh; } }
 /*contact slide*/
 #contact .bcg {
   background-image: url("http://i.imgur.com/vjyOiCR.png");
