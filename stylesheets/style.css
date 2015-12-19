@@ -27,9 +27,6 @@ body h3 {
 body .accent {
   color: #ffe100; }
 
-caption {
-  color: 100%;
-}
 
 .tooltip {
   display:none;
@@ -779,19 +776,31 @@ caption {
 #sponsors .bcg .hsContainer .hsContent #gold img {
   width: 80%; }
 
+@media only screen and (max-width: 1000px) {
+  #sponsors .bcg .hsContainer .hsContent #gold img {
+  width: 100%; }}
+
 #sponsors .bcg .hsContainer .hsContent #silver img {
   width: 30%; }
+
 
 #sponsors .bcg .hsContainer .hsContent #bronze img {
   width: 18%; }
 
+
 #sponsors .bcg .hsContainer .hsContent #custom img {
   width: 14%; }
+
 
 #sponsors .bcg .hsContainer .hsContent .caption {
   color:#222;
   font-style: italic;
 }
+
+@media only screen and (max-width: 1000px) {
+  #sponsors .bcg .hsContainer .hsContent .caption {
+  display:none;
+}}
 
 #sponsors .bcg .hsContainer table {
   width: 850px;
