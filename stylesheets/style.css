@@ -18,6 +18,7 @@ body a {
   font-weight: 700;
   text-decoration: none; }
 
+
 body h1,
 body h2,
 body h3 {
@@ -25,6 +26,10 @@ body h3 {
 
 body .accent {
   color: #ffe100; }
+
+caption {
+  color: 100%;
+}
 
 .tooltip {
   display:none;
@@ -37,6 +42,8 @@ body .accent {
   text-align:center;
   color:#222;
 }
+
+
 
 .no-border {
   border: none !important;
@@ -770,16 +777,21 @@ body .accent {
   margin: 16px; }
 
 #sponsors .bcg .hsContainer .hsContent #gold img {
-  width: 40%; }
+  width: 80%; }
 
 #sponsors .bcg .hsContainer .hsContent #silver img {
-  width: 28%; }
+  width: 30%; }
 
 #sponsors .bcg .hsContainer .hsContent #bronze img {
   width: 18%; }
 
 #sponsors .bcg .hsContainer .hsContent #custom img {
   width: 14%; }
+
+#sponsors .bcg .hsContainer .hsContent .caption {
+  color:#222;
+  font-style: italic;
+}
 
 #sponsors .bcg .hsContainer table {
   width: 850px;
