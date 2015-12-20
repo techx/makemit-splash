@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 document.getElementById('gears').style.visibility='hidden';
 document.getElementById('tracks').style.visibility='hidden';
@@ -59,6 +60,11 @@ document.getElementById('tracks').style.visibility='hidden';
     });
   }
 });
+
+
+/*
+* Email interest list for volunteering
+*/
 
 
 

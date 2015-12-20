@@ -122,6 +122,87 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
                  <div id="review" class="ui button">2015 Review</div>
                </a>
              </div>
+             <div class="row">
+              <div class="ui accordion">
+                <div class="title">
+                  <i class="dropdown icon"></i>
+                  Interested In Volunteering?
+                </div>
+                <div class="content" style="border-top:None">
+                  <div class="ui input">
+                    <input id="volunteerInterestName" type="text" name="name" placeholder="Foo Bar" style="background:white;s">
+                    <input id="volunteerInterest" type="text" name="name" placeholder="foobar@mit.edu" style="background:white;s">
+                    <p id="submitp" class="" style="padding-top:3px; display: none;">We will be in touch shortly.</p>
+                  
+                  <script>
+                  $('#volunteerInterest').keypress(function (e) {
+                    if (e.which == 13) {
+                      console.log("submitting!");
+                      postContactToGoogle();
+                      return false;    //<---- Add this line
+                    }
+                  });
+
+                  function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+//https://docs.google.com/a/makemit.org/forms/d/1lBbTWnAvNk9_EfugaeWHxg6EOvTfQ0RZTOiakureQX8/viewform
+    function postContactToGoogle() {
+        var email = $('#volunteerInterest').val()
+        var name = $('#volunteerInterestName').val() //1lBbTWnAvNk9_EfugaeWHxg6EOvTfQ0RZTOiakureQX8
+        console.log("Sending: " + email)
+        if ((email !== "") && (name !== "") && (validateEmail(email))) {
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1lBbTWnAvNk9_EfugaeWHxg6EOvTfQ0RZTOiakureQX8/formResponse",
+                data: {"entry_1017519988" : email,"entry_598532019":name},
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+ 
+                        
+                        $('#email').val("");
+                        console.log("Success");
+                        $('#volunteerInterestName').hide("slow")
+                        $('#volunteerInterest').hide("slow")
+                        $('#submitp').text("Thank you! We will be in touch shortly.");
+                        //alert("Thank you! We will be in touch shortly.");
+                        $('#submitp').show("slow")
+                        //$("#submitp").css("color","white");
+                        //Success message
+                    },
+                    200: function () {
+                        $('#email').val("");
+                        console.log("Success");
+                        $('#volunteerInterestName').hide("slow")
+                        $('#volunteerInterest').hide("slow")
+                        $('#submitp').text("Thank you! We will be in touch shortly.");
+                        $('#submitp').show("slow")
+                        //alert("Thank you! We will be in touch shortly.");
+                        //$("#submitp").css("color","white");
+                        //Success Message
+                    }
+                }
+                
+            });
+            console.log("Sent it!");
+        }
+        else {
+          $('#submitp').text("I can only read valid names/emails!");
+          $('#submitp').show("slow")
+            //Error message
+        }
+    }
+
+                  </script>
+                  </div>
+                  <!--
+                  <p class="transition visible" style="display: block !important;">Place your email here!</p> -->
+                </div>
+              </div>
+            </div>
            </div>
          </div>
        </div><a id="down-arrow" href="#about"><i class="chevron down icon"></i></a>
@@ -129,6 +210,11 @@ It doesn't take a picasso to stick a funny ascii art in here ;)
    </div>
  </div>
 </section>
+<script>
+$('.ui.accordion')
+  .accordion()
+;
+</script>
 <section id="about">
   <div class="bcg">
     <div class="hsContainer">
@@ -499,6 +585,10 @@ $('.masterTooltip').hover(function(){
 // //Incrase
 // initializeClock('clockdiv', deadline);
 </script>
+
+
+
+
 
 </body>
 </html>
