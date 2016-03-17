@@ -523,6 +523,10 @@ body .accent {
 #phase-2-winners {
   background: #fff;
 }
+#phase-2-winners .bcg .hsContainer{
+  text-align: center;
+}
+
 #phase-2-winners .bcg .hsContainer .hsContent {
   text-align: center;
 }
@@ -542,7 +546,7 @@ body .accent {
 }
 #phase-2-winners .bcg .hsContainer .hsContent .white .block-content {
   min-width: 350px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5vh;
@@ -557,10 +561,10 @@ body .accent {
 #phase-2-winners .bcg .hsContainer .hsContent .white .block-content .ui.accordion .title {
   font-size: 1.5em;
 }
-#phase-2-winners .bcg .hsContainer .hsContent .white .block-content .ui.accordion .title.active {
+/*#phase-2-winners .bcg .hsContainer .hsContent .white .block-content .ui.accordion .title.active {
   background-color: #ffca43;
   color: #fff;
-}
+}*/
 #phase-2-winners .bcg .hsContainer .hsContent .white .block-content .ui.accordion .item {
   padding-top: 5vh;
 }
