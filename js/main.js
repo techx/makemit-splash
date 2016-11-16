@@ -3,22 +3,20 @@ $(document).ready(function(){
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 document.getElementById('gears').style.visibility='hidden';
 document.getElementById('tracks').style.visibility='hidden';
+ $('.nav').css('display', 'none');
   } else {
-    $('#nav').hide();
     $(window).on('scroll', function() {
       var scrollTop = $(this).scrollTop();
-      var height = $('#home').outerHeight();
-      var calc = (scrollTop / height);
-
-      $('#nav').show();
-      $('#nav').css({ 'opacity': calc });
-      if (calc <= '0') {
-        $('#nav').hide();
+      var height = $('.nav').height();
+      var wHeight = $(window).height();
+      console.log({"st": scrollTop, "comp": wHeight-height});
+      if (scrollTop>wHeight-height) {
+        $(".nav").removeClass("nav-abs");
+        $(".nav").addClass("nav-fixed");
       }
-      if ( calc > '1' ) {
-        $('#nav').css({ 'opacity': 1 });
-      } else if ( calc < '0' ) {
-        $('#nav').css({ 'opacity': 0 });
+      else {
+        $(".nav").removeClass("nav-fixed");
+        $(".nav").addClass("nav-abs");
       }
     });
 
@@ -33,7 +31,8 @@ document.getElementById('tracks').style.visibility='hidden';
       });
     };
     $(window).scroll(function () {
-      var amount = ($window.scrollTop() / 47.13 + 0.25);
+      var amount = ($window.scrollTop() / 101.9 + 0);
+      // var amount = ($window.scrollTop() / 40.13 + 0.55);
       rotateCog($cogLeft, -amount);
       rotateCog($cogRight, amount);
     });
@@ -65,6 +64,3 @@ document.getElementById('tracks').style.visibility='hidden';
 /*
 * Email interest list for volunteering
 */
-
-
-
