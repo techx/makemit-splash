@@ -4,6 +4,15 @@ $(document).ready(function(){
 document.getElementById('gears').style.visibility='hidden';
 document.getElementById('tracks').style.visibility='hidden';
  $('.nav').css('display', 'none');
+
+// android / ios autoplay video
+ var video = document.querySelector('#logo-vid');
+ $("#logo-vid").css("margin-left", "-420px");
+ window.addEventListener('touchstart', function videoStart() {
+   video.play();
+   this.removeEventListener('touchstart', videoStart);
+ });
+
   } else {
     $(window).on('scroll', function() {
       var scrollTop = $(this).scrollTop();
