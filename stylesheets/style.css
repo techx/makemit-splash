@@ -140,7 +140,7 @@ body .accent {
 #right-track {
   position: absolute;
   right: 0;
-  width: 107px;
+  width: 106px;
   height: 100%;
   overflow: hidden;
   background-image: url("/img/ntr_ds.png");
@@ -614,7 +614,7 @@ body .accent {
   /*line-height: 1.8em;*/
   font-family: 'Lato'
   /*font-weight: 700; */
-  
+
 }
 
 /*stats slide*/
@@ -693,7 +693,7 @@ body .accent {
 
 #registration .bcg .hsContainer #registration #plus p {
   color: #fff; }
-  
+
 #registration .white {
   color: #fff; }
 
@@ -1019,7 +1019,7 @@ body .accent {
   font-family: "Montserrat", sans-serif; }
 
 #contact .bcg .hsContainer .contact i {
-  color: #59aacc; 
+  color: #59aacc;
   font-size: 2.5em;
 }
 
