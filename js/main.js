@@ -14,18 +14,22 @@ document.getElementById('tracks').style.visibility='hidden';
  });
 
   } else {
+    $('.nav').css('display', 'none');
     $(window).on('scroll', function() {
       var scrollTop = $(this).scrollTop();
       var height = $('.nav').height();
       var wHeight = $(window).height();
-      console.log({"st": scrollTop, "comp": wHeight-height});
-      if (scrollTop>wHeight-height) {
+      console.log({"st": scrollTop, "comp": wHeight+height});
+      if (scrollTop>wHeight+height+20) {
         $(".nav").removeClass("nav-abs");
         $(".nav").addClass("nav-fixed");
+        $(".nav").css("top", "0px");
       }
       else {
         $(".nav").removeClass("nav-fixed");
         $(".nav").addClass("nav-abs");
+        var makeMitPos = $("#title-accent").position().top;
+        $(".nav").css("top", $($(".hsContainer")[1]).position().top + "px");
       }
     });
 
