@@ -1,5 +1,5 @@
 install: true
-script: exit 0
+script: "echo 'nothing to build'"
 
 deploy:
   - provider: s3 #prod
