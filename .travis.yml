@@ -1,5 +1,5 @@
-language: node_js
 install: true
+script: exit 0
 
 deploy:
   - provider: s3 #prod
