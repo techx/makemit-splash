@@ -75,9 +75,7 @@ body .accent {
   border-radius: 0;
 }
 #nav a.item {
-  margin: 0 1em;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin: 14px 1em;
   position: relative;
   top: 50%;
   color: #728088;
@@ -87,7 +85,7 @@ body .accent {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   opacity: 0.6;
   border-bottom: 3px solid #728088;
   transition: all 300ms ease;
@@ -120,9 +118,9 @@ body .accent {
   }
   #nav .brand {
     visibility: collapse;
-    width: 0px;
-    max-width: 0px;
-    padding: 0px;
+    width: 0;
+    max-width: 0;
+    padding: 0;
   }
   #nav .container {
     width: auto;
@@ -153,8 +151,7 @@ body .accent {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: no-repeat center;
   background-size: cover;
 }
 .parallax-image-50 {
@@ -191,7 +188,7 @@ body .accent {
   line-height: 0.6em;
   font-family: "Montserrat", sans-serif;
 }
-#home-slide .bcg .hsContainer .hsContent #title-accent {
+#home-slide .bcg .hsContainer .hsContent .title-accent {
   color: #ffca43;
 }
 #home-slide .bcg .hsContainer .hsContent i {
@@ -299,8 +296,7 @@ body .accent {
   box-shadow: none;
 }
 #home-slide .bcg .content form {
-  padding: 5px;
-  padding-top: 0;
+  padding: 0 5px 5px;
 }
 #home-slide .bcg .content p {
   text-transform: none;
@@ -367,7 +363,7 @@ body .accent {
   text-align: center;
 }
 #phase-1-slide .bcg .hsContainer {
-  min-height: 0vh;
+  min-height: 0;
 }
 #phase-1-slide .bcg .hsContainer .hsContent {
   top: 0;
@@ -469,7 +465,7 @@ body .accent {
   text-align: center;
 }
 #phase-2-slide .bcg .hsContainer {
-  min-height: 0vh;
+  min-height: 0;
 }
 #phase-2-slide .bcg .hsContainer .hsContent {
   top: 0;
@@ -570,16 +566,14 @@ body .accent {
 }
 /*contact slide*/
 #contact-slide .bcg {
-  background-image: url("http://i.imgur.com/vjyOiCR.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: url("http://i.imgur.com/vjyOiCR.png") no-repeat center center;
   background-size: cover;
   min-height: 100%;
   text-align: center;
   height: 100%;
 }
 #contact-slide .bcg .hsContainer {
-  padding: 100px 0px 10px 0px;
+  padding: 100px 0 10px 0;
   height: auto;
 }
 #contact-slide .bcg .hsContainer table {
