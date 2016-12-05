@@ -1,15 +1,13 @@
 # makemit-splash
 This is the MakeMIT Splash Page.
 
-Since this Github pages, the public-facing branch is `gh-pages`. Therefore, `gh-pages` is a sacred branch, do not commit there unless you are 100% certain it is deploy-ready.
+## Making Changes
 
+Pushing changes to this repository will automatically deploy the repository to [dev.makemit.org](https://dev.makemit.org) via Travis
 
-Testing
--------
+To deploy to [makemit.org](https://makemit.org), simply create a GitHub release.
+
+## Locally developing
 
 To view the splash page on your own computer, simply run `python -m SimpleHTTPServer` in this directory. Then, go to `http://localhost:8000` to view your version.
 
-Dev
----
-
-Make sure to compile your scss appropriately. Something like `sass --watch /some/path/makemit-splash/stylesheets/scss:/some/path/makemit-splash/stylesheets` suffices.

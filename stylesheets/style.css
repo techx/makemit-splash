@@ -42,21 +42,21 @@ body a {
   height: 45px;
   background-color: white;
   z-index: 99;
-  bottom: 0px;
+  bottom: 0;
   border-top: none;
   left:0; right:0;
   margin: 0 auto;
   text-align: center;
   width: auto;
   line-height: 40px;
-  -webkit-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 21px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 21px -4px rgba(0,0,0,0.75);
+  box-shadow: 0 0 21px -4px rgba(0,0,0,0.75);
 }
 
 .nav-fixed {
   position: fixed;
-  top: 0px;
+  top: 0;
 }
 
 .nav-abs {
@@ -132,8 +132,7 @@ body .accent {
   width: 107px;
   height: 100%;
   overflow: hidden;
-  background-image: url("/img/ntl_ds.png");
-  background-repeat: repeat-y;
+  background: url("../img/ntl_ds.png") repeat-y;
   /*background-size: 100px;*/
 }
 
@@ -143,9 +142,7 @@ body .accent {
   width: 106px;
   height: 100%;
   overflow: hidden;
-  background-image: url("/img/ntr_ds.png");
-  background-repeat: repeat-y;
-  background-position: right top;
+  background: url("../img/ntr_ds.png") repeat-y right top;
   /*background-size: 100px;*/
 }
 
@@ -186,9 +183,7 @@ body .accent {
   border-radius: 0; }
 
 #nav a.item {
-  margin: 0 1em;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin: 14px 1em;
   position: relative;
   top: 50%;
   color: #7C92CA;
@@ -200,7 +195,7 @@ body .accent {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
   opacity: 0.6;
   border-bottom: 3px solid #728088;
 }
@@ -235,9 +230,9 @@ body .accent {
 
   #nav .brand {
     visibility: collapse;
-    width: 0px;
-    max-width: 0px;
-    padding: 0px; }
+    width: 0;
+    max-width: 0;
+    padding: 0; }
 
   #nav .container {
     width: auto;
@@ -375,7 +370,7 @@ body .accent {
   line-height: 0.3em;
   font-family: "Montserrat", sans-serif; }
 
-#home .bcg .hsContainer .hsContent #title-accent {
+#home .bcg .hsContainer .hsContent .title-accent {
   color: #FFCA41; }
 
 #home .bcg .hsContainer .hsContent i {
@@ -509,8 +504,8 @@ body .accent {
   box-shadow: none; }
 
 #home .bcg .content form {
-  padding: 5px;
-  padding-top: 0; }
+  padding: 0 5px 5px;
+}
 
 #home .bcg .content p {
   text-transform: none;
@@ -688,8 +683,8 @@ body .accent {
 
 #registration .bcg .hsContainer #registration #plus {
   width: 10px;
-  margin: 0;
-  margin-top: 50px; }
+  margin: 50px 0 0;
+}
 
 #registration .bcg .hsContainer #registration #plus p {
   color: #fff; }
@@ -714,12 +709,11 @@ body .accent {
 
 .portal-btn-pad {
   padding-top: 5vw;
-  display: none;
 }
 
 .portal-btn {
-  -webkit-border-radius: 13;
-  -moz-border-radius: 13;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
   border-radius: 13px;
   color: #ffffff;
   font-size: 20px;
@@ -847,7 +841,7 @@ body .accent {
   margin: auto; }
 
 #schedule .bcg .hsContainer .hsContent h3 {
-  margin: 0px; }
+  margin: 0; }
 
 #schedule .bcg .hsContainer .hsContent p {
   font-size: 1.4em;
@@ -882,7 +876,7 @@ body .accent {
     min-height: 60vh; } }
 @media only screen and (max-width: 480px) {
   #schedule .bcg .hsContainer .hsContent {
-    padding: 0px; }
+    padding: 0; }
 
   #schedule .bcg .hsContainer .hsContent p {
     width: auto; }
@@ -973,9 +967,7 @@ body .accent {
     min-height: 60vh; } }
 /*contact slide*/
 #contact .bcg {
-  background-image: url("http://i.imgur.com/vjyOiCR.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: url("http://i.imgur.com/vjyOiCR.png") no-repeat center center;
   background-size: cover;
   min-height: 100%;
   text-align: center;
@@ -986,7 +978,7 @@ body .accent {
   text-align: center; }
 
 #contact .bcg .hsContainer {
-  padding: 100px 0px 10px 0px;
+  padding: 100px 0 10px 0;
   height: auto; }
 
 #contact .bcg .hsContainer table {
@@ -1032,7 +1024,7 @@ body .accent {
     color: #7C92CA;
     margin-bottom: 4px;
     display: inline-block;
-    font-weight: 3000;
+    font-weight: 900;
     text-align: center;
     font-size: 1.6em;
 }
@@ -1045,11 +1037,8 @@ body .accent {
 }
 
 #home .bcg .hsContainer #clockdiv div > span{
-  padding: 10px;
-    padding-top: 3px;
-    padding-bottom: 4px;
-    border-radius: 3px;
-    border-radius: 3px;
+  padding: 3px 10px 4px;
+  border-radius: 3px;
     background: #ffca43;
     display: inline-block;
 }

@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Watch" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/makemit-splash/index.html">
+    <mapping url="http:///index.html" local-file="$PROJECT_DIR$/index.html" />
+    <mapping url="http:" local-file="$PROJECT_DIR$" />
+    <method />
+  </configuration>
+</component>
