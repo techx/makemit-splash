@@ -81,9 +81,10 @@ $(document).ready(function() {
 });
 
 function replaceStatic() {
-  var video = $("#logo-vid");
+  var video = $(".logo-vid-cont");
   var staticImg = $("#staticimg");
-  staticImg.css("display", "inline");
+  staticImg.css("display", "block");
+  staticImg.css("margin", "0 auto");
   video.css("display", "none");
 }
 
