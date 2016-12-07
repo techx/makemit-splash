@@ -3,6 +3,11 @@ $(document).ready(function() {
     var video = $("#logo-vid");
     var tracks = $('#tracks');
 
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+      console.log("safari");
+      replaceStatic();
+    }
+
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         document.getElementById('gears').style.visibility='hidden';
         document.getElementById('tracks').style.visibility='hidden';
@@ -14,6 +19,8 @@ $(document).ready(function() {
             video.play();
             this.removeEventListener('touchstart', videoStart);
         });
+
+        replaceStatic();
 
     } else {
         nav.css('display', 'none');
@@ -73,6 +80,12 @@ $(document).ready(function() {
     }
 });
 
+function replaceStatic() {
+  var video = $("#logo-vid");
+  var staticImg = $("#staticimg");
+  staticImg.css("display", "inline");
+  video.css("display", "none");
+}
 
 /*
  * Email interest list for volunteering
