@@ -358,7 +358,7 @@ body .accent {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
-  padding-top: 15vh; }
+  padding-top: 10vh; }
 
 #home .bcg .hsContainer .hsContent {
   padding-bottom: 50px;
@@ -549,6 +549,21 @@ body .accent {
   color: #ffca43;
 }
 
+#home .bcg .hsContainer .hsContent a.register-btn {
+    color: #57375a;
+    border: 4px solid #57375a;
+    font-weight: 700;
+    padding: 15px;
+    font-family: "Lato", "Helvetica", sans-serif;
+    text-transform: uppercase;
+}
+#home .bcg .hsContainer .hsContent a.register-btn:active,
+#home .bcg .hsContainer .hsContent a.register-btn:focus,
+#home .bcg .hsContainer .hsContent a.register-btn:hover {
+    color: white;
+    background-color: #57375a;
+}
+
 @media only screen and (max-height: 480px) {
   #home .bcg #tools {
     margin-top: -25%; } }
@@ -626,6 +641,23 @@ body .accent {
   z-index: -1;
 }
 
+#registration .bcg .hsContainer .hsContent a.register-btn {
+    color: white;
+    border: 4px solid white;
+    font-weight: 700;
+    padding: 15px;
+    font-family: "Lato", "Helvetica", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#registration .bcg .hsContainer .hsContent a.register-btn:active,
+#registration .bcg .hsContainer .hsContent a.register-btn:focus,
+#registration .bcg .hsContainer .hsContent a.register-btn:hover {
+    color: white;
+    background-color: #FFCA41;
+    border-color: #FFCA41;
+}
+
 #registration .bcg {
   /*background-image: url("http://i.imgur.com/RF7MPum.jpg");
   background-position: center center;
@@ -695,7 +727,7 @@ body .accent {
   color: #fff; }
 
 #registration .white .content {
-  width: 36vw;
+  width: 50vw;
   min-width: 300px;
   padding-bottom: 50px;
   margin-left: auto;
