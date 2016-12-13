@@ -1,5 +1,6 @@
 html {
-    height: 100%; }
+    height: 100%;
+}
 
 body {
     font-family: "Lato", "Helvetica", sans-serif;
@@ -8,28 +9,27 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+}
 
 body p {
-    font-family: "Lato", "Helvetica", sans-serif; }
+    font-family: "Lato", "Helvetica", sans-serif;
+}
 
 body a {
-    color: #ffe100;
+    color: #fcc35e;
     font-weight: 700;
-    text-decoration: none; }
+    text-decoration: none;
+}
 
 .ml {
     padding-top: 6vw;
     padding-bottom: 3vw;
-    /*width: 300px;*/
-    /*position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
 }
 
 .mi {
     font-size: 15pt;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #57375a;
     font-weight: 700;
 }
@@ -67,22 +67,23 @@ body a {
 body h1,
 body h2,
 body h3 {
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+}
 
 body .accent {
-    color: #ffe100; }
+    color: #fcc35e; }
 
 
 .tooltip {
     display:none;
     position:absolute;
-    border:2px solid #ffd466;
-    background-color:#ffcd4d;
+    border:2px solid #fcc35e;
+    background-color:#fcc35e;
     border-radius:5px;
     max-width: 25%;
     padding:10px;
     text-align:center;
-    color:#222;
+    color:#000;
 }
 
 
@@ -119,7 +120,16 @@ body .accent {
         padding-right: 5%; }
 
     .bcg {
-        background-attachment: scroll; } }
+        background-attachment: scroll; }
+
+    #gears, #tracks {
+        visibility: hidden;
+    }
+}
+
+#nav {
+    display: none;
+}
 
 #tracks {
     position: absolute;
@@ -186,7 +196,7 @@ body .accent {
     margin: 14px 1em;
     position: relative;
     top: 50%;
-    color: #7C92CA;
+    color: #62acd0;
     transition: all 300ms ease;
 }
 
@@ -248,21 +258,14 @@ body .accent {
 .logo-vid-cont {
     overflow:hidden;
     display:block;
-    height: 500px;
-    width: 400px;
+    height: 50vh;
+    width: 50vh;
     margin: 0 auto;
 }
 
 #logo-vid {
-    margin-top: -70px;
-    margin-left: -400px;
-}
-
-#logo-na {
-    padding-top: 4vh;
-    /*height: 42vh;*/
-    margin-bottom: 1vh;
-    /*animation: fadein 3s;*/
+    width: 100%;
+    height: 100%;
 }
 
 #left-ring {
@@ -362,6 +365,7 @@ body .accent {
 
 #home .bcg .hsContainer .hsContent {
     padding-bottom: 50px;
+    padding-top: 50px;
     text-align: center; }
 
 #home .bcg .hsContainer .hsContent h1 {
@@ -373,7 +377,7 @@ body .accent {
     font-family: "Montserrat", sans-serif; }
 
 #home .bcg .hsContainer .hsContent .title-accent {
-    color: #FFCA41; }
+    color: #fcc35e; }
 
 #home .bcg .hsContainer .hsContent i {
     font-size: 1.1em; }
@@ -387,7 +391,7 @@ body .accent {
     font-family: "Montserrat", sans-serif; }
 
 #home .bcg .hsContainer .hsContent a:hover {
-    color: #ffca43;
+    color: #fcc35e;
 }
 
 #home .bcg .hsContainer .hsContent h4,
@@ -431,8 +435,8 @@ body .accent {
 }
 
 #home .bcg #register:hover {
-    color: #ffca43;
-    border-color: #ffca43;
+    color: #fcc35e;
+    border-color: #fcc35e;
 }
 #home .bcg #review {
     font-family: "Montserrat", sans-serif;
@@ -451,8 +455,8 @@ body .accent {
 }
 
 #home .bcg #review:hover {
-    color: #ffca43;
-    border-color: #ffca43;
+    color: #fcc35e;
+    border-color: #fcc35e;
 }
 #home .bcg #mailsignup {
     background: none;
@@ -472,7 +476,7 @@ body .accent {
 
 #home .bcg .title:hover {
     transition: all 600ms ease;
-    color: #ffca43; }
+    color: #fcc35e; }
 
 #home .bcg .ui.error.field {
     box-shadow: none; }
@@ -482,7 +486,7 @@ body .accent {
     box-shadow: none;
     margin: 0;
     padding-top: 0;
-    color: #ffca43;
+    color: #fcc35e;
     letter-spacing: 0;
     text-transform: none; }
 
@@ -492,7 +496,7 @@ body .accent {
 
 #home .bcg button {
     color: #fff;
-    background-color: #ffca43;
+    background-color: #fcc35e;
     text-transform: uppercase;
     letter-spacing: 2px; }
 
@@ -519,10 +523,10 @@ body .accent {
     letter-spacing: 0; }
 
 #home .bcg .content .ui.field:focus {
-    box-shadow: 5px 0 0 0 #ffca43 inset; }
+    box-shadow: 5px 0 0 0 #fcc35e inset; }
 
 #home .bcg .content .ui.field {
-    color: #242323; }
+    color: #000; }
 
 #home .bcg button:hover {
     background-color: #fff;
@@ -546,7 +550,7 @@ body .accent {
     text-decoration: none; }
 
 #home #down-arrow:hover i {
-    color: #ffca43;
+    color: #fcc35e;
 }
 
 #home .bcg .hsContainer .hsContent a.register-btn {
@@ -554,7 +558,7 @@ body .accent {
     border: 4px solid #57375a;
     font-weight: 700;
     padding: 15px;
-    font-family: "Lato", "Helvetica", sans-serif;
+    font-family: "Monteserrat", sans-serif;
     text-transform: uppercase;
 }
 #home .bcg .hsContainer .hsContent a.register-btn:active,
@@ -624,7 +628,7 @@ body .accent {
     /*font-size: 1.3em;*/
     font-size: 22px;
     /*line-height: 1.8em;*/
-    font-family: 'Lato'
+    font-family: 'Lato', Helvetica, sans-serif;
     /*font-weight: 700; */
 
 }
@@ -646,7 +650,7 @@ body .accent {
     border: 4px solid white;
     font-weight: 700;
     padding: 15px;
-    font-family: "Lato", "Helvetica", sans-serif;
+    font-family: "Monteserrat", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     transition: all 300ms ease;
@@ -655,8 +659,8 @@ body .accent {
 #registration .bcg .hsContainer .hsContent a.register-btn:focus,
 #registration .bcg .hsContainer .hsContent a.register-btn:hover {
     color: white;
-    background-color: #FFCA41;
-    border-color: #FFCA41;
+    background-color: #fcc35e;
+    border-color: #fcc35e;
 }
 
 #registration .bcg {
@@ -676,7 +680,7 @@ body .accent {
 
 .ctc {
     font-size: 15pt;
-    font-family: 'Lato';
+    font-family: 'Lato', Helvetica, sans-serif;
     color: white;
     padding-top: 100px;
     width: 550px;
@@ -737,7 +741,7 @@ body .accent {
 
 #registration .white .content p {
     font-size: 15pt;
-    font-family: 'Lato';
+    font-family: 'Lato', Helvetica, sans-serif;
     color: white;
     font-weight: normal;
 }
@@ -752,15 +756,15 @@ body .accent {
     border-radius: 13px;
     color: #ffffff;
     font-size: 20px;
-    background: #59aacc;
+    background: #62acd0;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
 .portal-btn:hover {
-    background: #77bdd9;
+    background: #62acd0;
     text-decoration: none;
     color: white;
 }
@@ -779,11 +783,11 @@ body .accent {
     color: #fbe191; }
 
 #faq a:hover {
-    color: #ffca43;
+    color: #fcc35e;
     transition: all 600ms ease; }
 
 #faq .bcg {
-    background-color: #59aacc;
+    background-color: #62acd0;
     min-height: 100%;
     text-align: center; }
 
@@ -815,12 +819,12 @@ body .accent {
     font-weight: bold;
     font-size: 25pt;
     letter-spacing: normal;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 #faq .otherqt {
     color: white;
-    font-family: 'Lato';
+    font-family: 'Lato', Helvetica, sans-serif;
     font-size: 15pt;
     max-width: 700px;
     margin: auto;
@@ -830,8 +834,8 @@ body .accent {
 }
 
 #faq .bcg .hsContainer h2 {
-    color: #51365b;
-    font-family: 'Lato';
+    color: #4b2951;
+    font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 700;
     text-align: left;
     font-size: 18pt;
@@ -855,7 +859,7 @@ body .accent {
     color: #fff; }
 
 #schedule .bcg {
-    background: #7C92CA;
+    background: #62acd0;
     text-align: center; }
 
 #schedule .bcg .hsContainer {
@@ -929,7 +933,7 @@ body .accent {
 
 #sponsors .bcg {
     /*background: #ecc65b;*/
-    /*background: #ffca43;*/
+    /*background: #fcc35e;*/
     background-color: white;
     text-align: center; }
 
@@ -942,7 +946,7 @@ body .accent {
 #sponsors .bcg .hsContainer .hsContent h1 {
     font-size: 32pt;
     text-transform: uppercase;
-    color: #51365b; }
+    color: #4b2951; }
 
 #sponsors .bcg .hsContainer .hsContent p {
     font-size: 1.5em;
@@ -1002,14 +1006,13 @@ body .accent {
         min-height: 60vh; } }
 /*contact slide*/
 #contact .bcg {
-    background: url("http://i.imgur.com/vjyOiCR.png") no-repeat center center;
     background-size: cover;
     min-height: 100%;
     text-align: center;
     height: 100%; }
 
 #contact .bcg {
-    background: #ffc35e;
+    background: #fcc35e;
     text-align: center; }
 
 #contact .bcg .hsContainer {
@@ -1033,7 +1036,7 @@ body .accent {
     margin-top: 0; }
 
 #contact .bcg .hsContainer #accent {
-    color: #59aacc; }
+    color: #62acd0; }
 
 #contact .bcg .hsContainer .contact {
     margin-top: 100px;
@@ -1046,7 +1049,7 @@ body .accent {
     font-family: "Montserrat", sans-serif; }
 
 #contact .bcg .hsContainer .contact i {
-    color: #59aacc;
+    color: #62acd0;
     font-size: 2.5em;
 }
 
@@ -1056,7 +1059,7 @@ body .accent {
 
 
 #home .bcg .hsContainer #clockdiv {
-    color: #7C92CA;
+    color: #62acd0;
     margin-bottom: 4px;
     display: inline-block;
     font-weight: 900;
@@ -1074,7 +1077,7 @@ body .accent {
 #home .bcg .hsContainer #clockdiv div > span{
     padding: 3px 10px 4px;
     border-radius: 3px;
-    background: #ffca43;
+    background: #fcc35e;
     display: inline-block;
 }
 
