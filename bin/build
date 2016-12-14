@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --url-ignore www.youtube.com -- http_status_ignore [0,404]
+# bundle exec htmlproofer ./_site --url-ignore www.youtube.com -- http_status_ignore [0,404]
