@@ -36,8 +36,14 @@ $(document).ready(function() {
     });
 
     window.addEventListener('touchstart', function videoStart() {
-        video.play();
+        video[0].play();
         this.removeEventListener('touchstart', videoStart);
+    });
+
+    $(video).on('play', function() {
+        setTimeout(function() {
+            video[0].pause(); //pause before it goes black
+        },10000);
     });
 
     ResizeSensor($("html"), function() {

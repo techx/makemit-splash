@@ -1,5 +1,12 @@
-install: true
-script: "echo 'nothing to build'"
+language: ruby
+rvm:
+- 2.3.3
+
+script: bin/build
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 deploy:
   - provider: s3 #prod
@@ -8,6 +15,7 @@ deploy:
       secure: "NhGdQcyWixoRRHLuTXTroP6w3EblgBvaLYfaei9asMcpdTh+LS6KHBMIos8mrbEC9iTJ59hNNgnnM9NKupAP14dvp6KtuiglUY1lsLeYErd02rCMkbtIBD7wrCuPyCGCqp4i2S1lzW01Im3GwFEwaB4PsvbehxgDVvLqLn2pMt5FTc/5hFZpiGZkIvoKEnQWiz/TIlSR4dUifADe3Niq1PJtxZHQjhnFH3SF6acyOBzMFnkEbxwaWZU1Ef0us/SKfJyvKvkz1Av/31LjXEuwQo+XF9PVW3DwGQjxkX0KhiEy6juRvwC+J8v/rr+C5HtVoYf/tC3CQH8X8AyWymbaDdFx8+SyJckUdJ4scIzWwK9XDc/jJ++iSbnddruwBvPTaZT42q/Am4aljFzcTAYuRD4jdw9CA9/Qgpk1DGK/1Yltc7sO0KYV0q63HNW/tPP2qOsG2/3YfqUZrpZu2MKRcVe75qwSAQ7DV8Mw3fRAvZghxVk/FBuO6DLp9I7tQ7xQXccTFvTnF7iM5AsdYlHDWL29h67skjKNE3FfxOMYC/buo75bPvjsdDrel2klNajqkVDsKycFY5tXTKl9/EUksz41/8aqxQ8hPBAFLuuDQ808Polq4FgUGguNKU5mbpdOUzA7syOL3x2s55EcvauqY47LSM64SbubXfG9ZU/z6nk="
     bucket: "makemit.org"
     skip_cleanup: true
+    local_dir: _site
     on:
       tags: true
 
@@ -16,4 +24,5 @@ deploy:
     secret_access_key:
       secure: "mTmfrL7RZfTqFMR5KsHlQAfUeTQSKmU/XCftKsZkuObRogQ262vtN5YMxpFpmXlhD44kZYrhPa2PSCxGyBrCy0HzxiHQaV36dokUCbWPAYZWCBr1AryXWjmcOmH6ayQTwEujHfVvetKOMioFpJ+NszI5HvdCaTZhG3hYyyENBuI20SKUz4Xi/AMbr9Qe8bsVZEjYudEHj1ZyneGYQz8XysZjan8fRbuBE/TaGXJBIhtp7GaQ60kcEXY7zJhjwBGHW2GbKDETKQcujeh5B40hTS3h7IM6FZZh+4rjqhgnFmj0vX0u7uVODny2Y/5rdEeVlqGurPL7IaKcP1pL7FxMCY/aD44gCbRQOwhpcnYyrNfCZk1Nt0SwrTFOuNBIll9kEL9xTDrbOAiKWEtK33XhJy3gYPeuJn7T+55vrLAyx3ZJC1Pjwh5RTBuCG8fC+rKnejBSMxep3mQQ651GMFJTu5V7Jdptuai7RUnBISdqUlDKXaDHb04uHAO8g+tp+OncKnfU0ye2yQzOKC6u69+HiNlKb6OYFB7VKcucwaS+Vydf3ZsINGFVhDlGLu9Jws55S/s/diZcpJw3+zommoNI2DR62MO6wKlrkkVlNA6TxhQu4qDXEnaEVstXudi9gSVASvllSSPQSAocExwT10JIs3/mEy7Ntz5Pzb54vmbYVQI="
     bucket: "dev.makemit.org"
+    local_dir: _site
     skip_cleanup: true

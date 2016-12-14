@@ -9,5 +9,8 @@ To deploy to [makemit.org](https://makemit.org), simply create a GitHub release.
 
 ## Locally developing
 
-To view the splash page on your own computer, simply run `python -m SimpleHTTPServer` in this directory. Then, go to `http://localhost:8000` to view your version.
-
+Run `./bin/install`
+Then run either
+- `./bin/serve` (will automatically refresh on each change)
+    - Navigate to [http://localhost:4000](http://localhost:4000)
+- `./bin/build` (will NOT automatically refresh on each change)

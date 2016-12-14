@@ -1,0 +1,27 @@
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin transition-duration($duration) {
+  -webkit-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+@mixin background-image-retina($file, $type, $size) {
+  background-image: url($file + '.' + $type);
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx){
+    & {
+      background-image: url($file + '@2x.' + $type);
+      -webkit-background-size: $size;
+      -moz-background-size: $size;
+      -o-background-size: $size;
+      background-size: $size;
+    }
+  }
+}

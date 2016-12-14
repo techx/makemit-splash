@@ -1,0 +1,11 @@
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"
+timezone: America/New_York
+name: MakeMIT 2017 Day-Of Info
+year: 2017
+
+exclude: [bin, vendor, Gemfile, Gemfile.lock, makemit-dayof.iml,README.md]
