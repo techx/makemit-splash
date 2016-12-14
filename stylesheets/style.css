@@ -207,7 +207,7 @@ body .accent {
     left: 0;
     bottom: 0;
     opacity: 0.6;
-    border-bottom: 3px solid #728088;
+    border-bottom: 3px solid #8c8c8c;
 }
 
 #nav .item {
@@ -405,13 +405,7 @@ body .accent {
     transition: all 300ms ease;
 }
 
-@media only screen and (max-height: 667px) {
-    #home .bcg .hsContainer .hsContent {
-        padding-top: 45h; } }
-/*
-#home .bcg .ui.stackable.grid {
-  margin-top: 1px; }
-*/
+
 #home .bcg .ui.segment {
     background: none; }
 
@@ -530,7 +524,7 @@ body .accent {
 
 #home .bcg button:hover {
     background-color: #fff;
-    color: #728088;
+    color: #8c8c8c;
     transition: all 600ms ease; }
 
 #home #down-arrow {
@@ -673,7 +667,7 @@ body .accent {
     text-align: center; }
 
 .rt {
-    color: #f8bf5e;
+    color: #fcc35e;
     font-size: 32pt;
     padding-top: 100px;
 }
@@ -713,7 +707,7 @@ body .accent {
     margin-top: 0; }
 
 #registration .bcg .hsContainer #registration .column p {
-    color: #fbe191;
+    color: #fcc35e;
     font-size: 1.7em;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
@@ -780,7 +774,7 @@ body .accent {
     height: auto; }
 
 #faq a {
-    color: #fbe191; }
+    color: #fcc35e; }
 
 #faq a:hover {
     color: #fcc35e;
@@ -834,7 +828,7 @@ body .accent {
 }
 
 #faq .bcg .hsContainer h2 {
-    color: #4b2951;
+    color: #57375a;
     font-family: 'Lato', Helvetica, sans-serif;
     font-weight: 700;
     text-align: left;
@@ -946,7 +940,7 @@ body .accent {
 #sponsors .bcg .hsContainer .hsContent h1 {
     font-size: 32pt;
     text-transform: uppercase;
-    color: #4b2951; }
+    color: #57375a; }
 
 #sponsors .bcg .hsContainer .hsContent p {
     font-size: 1.5em;
@@ -988,7 +982,7 @@ body .accent {
 
 
 #sponsors .bcg .hsContainer .hsContent .caption {
-    color:#222;
+    color:#8c8c8c;
     font-style: italic;
 }
 
