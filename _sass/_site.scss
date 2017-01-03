@@ -151,18 +151,37 @@ body {
   width: 107px;
   height: 100%;
   overflow: hidden;
-  background: url("../img/ntl_ds.png") repeat-y;
-  /*background-size: 100px;*/
+  background: url("../img/texture_stack.png") repeat-y;
+  -webkit-mask-image: url("../img/mask_stack_l.png");
+  mask-image: url("../img/mask_stack_l.png");
+}
+
+#left-track-shadow {
+  position: absolute;
+  width: 107px;
+  height: 100%;
+  overflow: hidden;
+  background: url("../img/shadow_stack_l.png") repeat-y;
 }
 
 #right-track {
   position: absolute;
   right: 0;
-  width: 106px;
+  width: 107px;
   height: 100%;
   overflow: hidden;
-  background: url("../img/ntr_ds.png") repeat-y right top;
-  /*background-size: 100px;*/
+  background: url("../img/texture_stack.png") repeat-y right top;
+  -webkit-mask-image: url("../img/mask_stack_r.png");
+  mask-image: url("../img/mask_stack_r.png");
+}
+
+#right-track-shadow {
+  position: absolute;
+  right: 0;
+  width: 107px;
+  height: 100%;
+  overflow: hidden;
+  background: url("../img/shadow_stack_r.png") repeat-y;
 }
 
 #gears {
