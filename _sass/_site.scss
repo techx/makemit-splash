@@ -483,6 +483,16 @@ body {
           transition: all 300ms ease;
         }
 
+        a.volunteer {
+          color: #fff;
+          cursor: pointer;
+        }
+
+        a.volunteer:hover {
+          color: $yellow;
+          transition: all 600ms ease;
+        }
+
 
         a.register-btn {
           color: $purple;
@@ -495,6 +505,17 @@ body {
         a.register-btn:active, a.register-btn:focus, a.register-btn:hover {
           color: white;
           background-color: $purple;
+        }
+
+        .volunteer-box {
+          font-family: $font-body;
+          padding: 10px;
+          font-size: 12pt;
+        }
+
+        .volunteer-thanks {
+          font-size: 14pt;
+          font-family: $font-header;
         }
       }
     }

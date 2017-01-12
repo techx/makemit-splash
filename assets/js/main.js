@@ -3,6 +3,44 @@ $(document).ready(function() {
     var video = $("#logo-vid");
     var tracks = $('#tracks');
 
+    $('.volunteer').click(function() {
+      $('#volunteer-form').animate({ opacity: 1 });
+      $(".volunteer-box").focus();
+    });
+
+    $(".volunteer-box").keyup(function(event){
+      if(event.keyCode == 13){
+          $("#volunteer-submit").click();
+      }
+    });
+
+    $('#volunteer-submit').click(function() {
+      var email = encodeURIComponent($('.volunteer-box').val());
+      var q1ID = "entry.1391724249";
+
+      suc = function() {
+        $('#volunteer-form').fadeOut("display: none;");
+        $('#volunteer-thanks').fadeIn("display: inline-block;");
+      };
+
+      var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdIqZGJqFeIB-fPiXXi4TwJUj9BSkm1VI-gRuaxL-cB1jpY0Q/formResponse?';
+      var submitRef = '&submit=Submit';
+      var submitURL = (baseURL + q1ID + "=" + email + submitRef);
+      console.log(submitURL);
+      $.ajax({
+            url: submitURL,
+            type: "GET",
+            statusCode: {
+                0: function() {
+                    suc();
+                },
+                200: function() {
+                    suc();
+                }
+            }
+        });
+    });
+
     $(window).on('scroll', function() {
         var scrollTop = $(this).scrollTop();
         var height = nav.height();
