@@ -19,7 +19,7 @@ $(document).ready(function() {
       var q1ID = "entry.1391724249";
 
       suc = function() {
-        $('#volunteer-form').fadeOut("display: none;");
+        //$('#volunteer-form').fadeOut("display: none;");
         $('#volunteer-thanks').fadeIn("display: inline-block;");
       };
 

@@ -486,10 +486,13 @@ body {
         a.volunteer {
           color: #fff;
           cursor: pointer;
+          border: 3px solid #fff;
+          padding: 10px;
         }
 
         a.volunteer:hover {
-          color: $yellow;
+          color: $purple;
+          background-color: white;
           transition: all 600ms ease;
         }
 
