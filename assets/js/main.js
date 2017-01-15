@@ -41,17 +41,11 @@ $(document).ready(function() {
         });
     });
 
-    $.ajax({
-        url: 'http://my-api.makemit.org/api/settings',
-        type: "GET",
-        success: function(data) {
-            var obj = $.parseJSON(data);
-            var timeCloses = obj['timeClose'];
-            var diff = timeCloses - $.now();
-            var days = Math.floor(diff / 1000 / 86400);
-            $('#regclose').text("Registration closes in <b>" + days + "days.</b>");
-        }
-    })
+    // TO-DO Hardcoded.
+    var timeCloses = 1485579540000;
+    var diff = timeCloses - $.now();
+    var days = Math.floor(diff / 1000 / 86400);
+    $('#regclose').html("Registration closes in <b>" + days + " days.</b>");
 
     $(window).on('scroll', function() {
         var scrollTop = $(this).scrollTop();

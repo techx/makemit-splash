@@ -6,7 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6efb007-c2da-48a7-8646-50d6e106c96d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
     </list>
     <list id="af45bce3-7d4c-4b0a-8a92-e0cbd9b9436b" name="Revert: Updated code" comment="" />
@@ -86,10 +85,10 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+            <state relative-caret-position="300">
+              <caret line="46" column="36" lean-forward="false" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
               <folding>
-                <marker date="1484508414000" expanded="true" signature="7034:7060" ph="..." />
+                <marker date="1484508947000" expanded="true" signature="6843:6869" ph="..." />
               </folding>
             </state>
           </provider>
@@ -750,7 +749,7 @@
       <workItem from="1481767806551" duration="639000" />
       <workItem from="1482112026882" duration="1027000" />
       <workItem from="1482113617426" duration="1459000" />
-      <workItem from="1484507561865" duration="783000" />
+      <workItem from="1484507561865" duration="1158000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up code&#10;">
       <created>1480711326053</created>
@@ -889,7 +888,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30675000" />
+    <option name="totallyTimeSpent" value="31050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1230,10 +1229,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        <state relative-caret-position="300">
+          <caret line="46" column="36" lean-forward="false" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
           <folding>
-            <marker date="1484508414000" expanded="true" signature="7034:7060" ph="..." />
+            <marker date="1484508947000" expanded="true" signature="6843:6869" ph="..." />
           </folding>
         </state>
       </provider>
