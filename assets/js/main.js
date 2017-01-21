@@ -45,7 +45,12 @@ $(document).ready(function() {
     var timeCloses = 1485579540000;
     var diff = timeCloses - $.now();
     var days = Math.floor(diff / 1000 / 86400);
-    $('#regclose').html("Registration closes in <b>" + days + " days.</b>");
+    if (days < 0) {
+      $('#regclose').html("Registration has closed!");
+    }
+    else {
+      $('#regclose').html("Registration closes in <b>" + days + " days.</b>");
+    }
 
     $(window).on('scroll', function() {
         var scrollTop = $(this).scrollTop();
