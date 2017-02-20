@@ -972,6 +972,94 @@ body {
   }
 }
 
+/*schedule slide*/
+#mw-schedule {
+  min-height: 40vh;
+  color: #fff;
+
+  .bcg {
+    background-color: #61ACD0;
+    background-size: cover;
+    text-align: center;
+
+    .hsContainer {
+      min-height: 41vh;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      @media only screen and (max-height: 480px) {
+        min-height: 60vh;
+      }
+      @media only screen and (max-width: 480px) {
+        padding: 0;
+
+        .hsContent {
+          p {
+            width: auto;
+          }
+          #schedule {
+            width: auto;
+          }
+        }
+      }
+
+      .hsContent {
+        #schedule-container {
+          padding-left: 10vw;
+          padding-right: 10vw;
+        }
+
+        h1 {
+          font-size: 3em;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+        }
+
+        h2 {
+          margin: auto;
+        }
+
+        h3 {
+          margin: 0;
+        }
+
+        p {
+          font-size: 1.4em;
+          width: 400px;
+          margin: auto;
+        }
+
+        #schedule {
+          // width: 35em;
+          max-width: 80%;
+          text-align: left;
+          margin: auto;
+          .item {
+            font-size: 1.4em;
+            @media only screen and (max-width: 600px) {
+              font-size: 1.15em;
+            }
+            .header {
+              width: 25%;
+              display: inline-block;
+              text-align: right;
+            }
+            .description {
+              display: inline-block;
+              margin-left: 2em;
+            }
+          }
+          .divider {
+            border-top: 3px solid #fff;
+            margin: 15px auto;
+            padding-top: 5px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
 /*sponsors slide*/
 #sponsors {
   min-height: 40vh;
@@ -1097,4 +1185,9 @@ body {
       }
     }
   }
+}
+
+.mw-head {
+  font-weight: 700;
+  font-family: 'Montserrat';
 }
