@@ -42,7 +42,7 @@ $(document).ready(function() {
     });
 
     // TO-DO Hardcoded.
-    var timeCloses = 1485665940000;
+    var timeCloses = 1516121999000;
     var diff = timeCloses - $.now();
     var days = Math.floor(diff / 1000 / 86400);
     if (days < 0) {

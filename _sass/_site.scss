@@ -1177,9 +1177,16 @@ hr {
   text-align: center;
   height: 60vh; }
 
+  #contact .hsContent {
+    padding-bottom: 5vw;
+    background: #fcc35e;
+  }
+
+
 #contact .bcg .hsContainer {
   height: 60vh;
   min-height: 60vh;
+  background: #fcc35e;
   /*padding: 100px 0 10px 0;
    *I just deleted this because it was causing weird white space at bottom
    *dont think it causes any other issues*/ }

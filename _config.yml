@@ -5,7 +5,7 @@ defaults:
     values:
       layout: "default"
 timezone: America/New_York
-name: MakeMIT 2017
-year: 2017
+name: MakeMIT 2018
+year: 2018
 
 exclude: [bin, vendor, Gemfile, Gemfile.lock, makemit-splash.iml,README.md]
