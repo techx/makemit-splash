@@ -1001,28 +1001,28 @@ hr {
   width: 400px;
   margin: auto; }
 
-#schedule .bcg .hsContainer .hsContent #schedule {
+#schedule-items {
   width: 35em;
   max-width: 80%;
   text-align: left;
   margin: auto; }
 
-#schedule .bcg .hsContainer .hsContent #schedule .item {
+#schedule-items .item {
   font-size: 1.4em; }
 
 @media only screen and (max-width: 600px) {
-  #schedule .bcg .hsContainer .hsContent #schedule .item {
+  #schedule-items .item {
     font-size: 1.15em; } }
-#schedule .bcg .hsContainer .hsContent #schedule .item .header {
+#schedule-items .item .header {
   width: 25%;
   display: inline-block;
   text-align: right; }
 
-#schedule .bcg .hsContainer .hsContent #schedule .item .description {
+#schedule-items .item .description {
   display: inline-block;
   margin-left: 2em; }
 
-#schedule .bcg .hsContainer .hsContent #schedule .divider {
+#schedule-items .divider {
   border-top: 3px solid #fff;
   margin: 15px auto;
   padding-top: 5px; }
