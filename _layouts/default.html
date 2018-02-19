@@ -28,7 +28,9 @@
     <meta name="twitter:image:src" content="img/logo-black@2x.png">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/flipclock.css" />
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/flipclock.js"></script>
 
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png" />
@@ -128,6 +130,32 @@
                     LOGIN
                 </a>
                 <br />
+                <!-- <br />
+                <h2>Hacking starts in . . .</h2>
+                <div class="clock" style="margin:2em;"></div>
+                <script type="text/javascript">
+            			var clock;
+
+            			$(document).ready(function() {
+
+            				// Grab the current date
+            				var currentDate = new Date();
+
+            				// Set some date in the future. In this case, it's always Jan 1
+            				var futureDate  = new Date(currentDate.getFullYear(), 1, 24);
+
+            				// Calculate the difference in seconds between the future and current date
+            				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+                    console.log(diff);
+            				// Instantiate a coutdown FlipClock
+            				clock = $('.clock').FlipClock(diff, {
+            					clockFace: 'DailyCounter',
+            					countdown: true,
+            					showSeconds: false
+            				});
+            			});
+            		</script> -->
                 <br />
                 <br />
 
@@ -448,7 +476,7 @@
                                 </div>
                                 <br><br>
                                 <div class="column">
-                                    <a target="_blank" href="https://www.ibm.com/"><img src="/assets/img/sponsors/GOLD-IBM.png" alt="IBM"/></a>
+                                    <a target="_blank" href="https://www.ibm.com/"><img src="/assets/img/sponsors/GOLD_IBM_Watson_IoT.png" alt="IBM"/></a>
                                     <div class="caption">IBM is an American multinational technology company headquartered in Armonk, New York, United States, with operations in over 170 countries.</div>
                                     <br>
                                 </div>
@@ -469,11 +497,6 @@
                                         <a target="_blank" href="https://www.apple.com/"><img src="/assets/img/sponsors/SILVER-apple.png" alt="Apple"/></a>
                                         <a target="_blank" href="https://ultimaker.com/"><img src="/assets/img/sponsors/SILVER-Ultimaker.png" alt="Ultimaker"/></a>
                                     </div>
-                                  <!-- </br></br> -->
-                                  <!-- <div class="column"> -->
-                                      <!-- <a target="_blank" href="http://www.hudson-trading.com/"><img src="/assets/img/sponsors/SILVER-HRT.png" alt="Hudson River Trading"/></a> -->
-                                      <!-- <a target="_blank" href="https://ultimaker.com/"><img src="/assets/img/sponsors/SILVER-Ultimaker.png" alt="Ultimaker"/></a> -->
-                                  <!-- </div> -->
                                 </div>
                             </div>
                         </div>
@@ -495,16 +518,8 @@
                                         <a target="_blank" href="https://www.makergear.com/"><img src="/assets/img/sponsors/BRONZE-MAKERGEAR.png" alt="MakerGear"/></a>
                                         <a target="_blank" href="https://www.particle.io/"><img src="/assets/img/sponsors/BRONZE-Particle.png" alt="Particle"/></a>
                                     </div>
-                                    <!-- <div class="column">
-                                        <a target="_blank" href="http://us.coca-cola.com/home/"><img src="/assets/img/sponsors/BRONZE-coca-cola.png" alt="Coca-Cola"/></a>
-                                        <a target="_blank" href="http://www.ptc.com/"><img src="/assets/img/sponsors/BRONZE-ptc.png" alt="PTC"/></a>
-                                        <a target="_blank" href="http://www.mouser.com/"><img src="/assets/img/sponsors/BRONZE-mouser.png" alt="Mouser"/></a>
-                                    </div> -->
                                     <div class="column">
                                         <a target="_blank" href="http://www.hudson-trading.com/"><img src="/assets/img/sponsors/BRONZE-HRT.png" alt="Hudson River Trading"/></a>
-                                        <!-- <a target="_blank" href="http://www.samsung.com/us/"><img src="/assets/img/sponsors/BRONZE-Samsung.png" alt="Samsung"/></a> -->
-                                        <!-- <a target="_blank" href="http://www.foodnetwork.com/"><img style="width: 8%" src="/assets/img/sponsors/BRONZE-Food-Network.png" alt="Food Network"/></a> -->
-                                        <!-- <a target="_blank" href="http://www.magnemotion.com/"><img src="/assets/img/sponsors/BRONZE-Rockwell_Automation.png" alt="Rockwell Automation"/></a> -->
                                     </div>
                                 </div>
                             </div>
